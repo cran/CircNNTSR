@@ -1,6 +1,6 @@
-\name{turtles_radians}
+\name{Turtles_radians}
 \Rdversion{0.1}
-\alias{turtles_radians}
+\alias{Turtles_radians}
 \docType{data}
 \title{
 Movements of turtles
@@ -8,7 +8,7 @@ Movements of turtles
 \description{
 Data measurement of the directions taken by 76 turtles after treatment
 }
-\usage{data(turtles_radians)}
+\usage{data(Turtles_radians)}
 \format{Directions of turtles in radians}
 
 %\details{
@@ -21,7 +21,7 @@ of Statistics, Stanford University. Stanford, CA.
 N.I. Fisher (1993) Statistical analysis of circular data. Cambridge University Press.
 }
 %\examples{
-%data(turtles_radianes)
-%## maybe str(turtles_radianes) ; plot(turtles_radianes) ...
+%data(Turtles_radianes)
+%## maybe str(Turtles_radianes) ; plot(Turtles_radianes) ...
 %}
 %\keyword{datasets}

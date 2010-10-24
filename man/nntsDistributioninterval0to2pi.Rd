@@ -1,25 +1,32 @@
-\name{nntsrandominitial}
+\name{nntsDistributioninterval0to2pi}
 \Rdversion{1.0}
-\alias{nntsrandominitial}
+\alias{nntsDistributioninterval0to2pi}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Initial random point
+\title{NNTS distribution function for incidence data defined in the interval [0,2*pi]
 %%  ~~function to do ... ~~
 }
-\description{This function generates a random point on the surface of the (M+1)-dimensional unit hypersphere
+\description{Computes the distribution function for incidence data (number of observed values in certain intervals defined in the interval [0,2*pi]) at theta
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-nntsrandominitial(M=1)
+nntsDistributioninterval0to2pi(theta, cpars = 1/sqrt(2 * pi), M = 0)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{M}{Number of components in the NNTS
+  \item{theta}{Value at which the distribution function is computed
+%%     ~~Describe \code{theta} here~~
+}
+  \item{cpars}{vector of complex numbers of dimension M+1. The first element is a real and positive number. The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). 
+%%     ~~Describe \code{cpars} here~~
+}
+  \item{M}{number of components in the NNTS
+%%     ~~Describe \code{M} here~~
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
-\value{Gives a valid initial point for estimation functions 
+\value{Value of distribution function at theta
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
@@ -43,7 +50,7 @@ nntsrandominitial(M=1)
 }
 %\examples{
 
-%}
+%  }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 %\keyword{ ~kwd1 }

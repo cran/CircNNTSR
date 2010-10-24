@@ -1,8 +1,6 @@
 nntsSymmetricDensity <-
 function(cpars=c(0,0),M=0,theta){
 
-# cpars is a vector of real numbers of dimension M+1. The first M elements are the SQUARED norms. The last element is the mean of symmetry 
-
 if (M==0) 
 return(sqrt(1/(2*pi)))
 else 

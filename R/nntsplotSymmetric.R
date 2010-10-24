@@ -22,7 +22,7 @@ return("sum of componentes greater than condition")
 cparsSymmetric<-c(cpars[1:M],array(0,M))
 
 nntsplotint<-function(theta){
-res <- nntsABDensity(cparsSymmetric,M,theta-cpars[(M+1)]) 
+res <- nntsABDensitySymmetric(cparsSymmetric,M,theta-cpars[(M+1)]) 
 }
 return(curve(nntsplotint,0,2*pi,xlab="theta",...))
 }

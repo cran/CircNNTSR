@@ -1,6 +1,6 @@
-\name{nntsrandominitial}
+\name{nntsrandominitialSymmetric}
 \Rdversion{1.0}
-\alias{nntsrandominitial}
+\alias{nntsrandominitialSymmetric}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Initial random point
 %%  ~~function to do ... ~~
@@ -9,7 +9,7 @@
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-nntsrandominitial(M=1)
+nntsrandominitialSymmetric(M)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -19,7 +19,7 @@ nntsrandominitial(M=1)
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
-\value{Gives a valid initial point for estimation functions 
+\value{Gives a valid initial point for estimation functions nntsestimation and nntsestimationSymmetric
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}

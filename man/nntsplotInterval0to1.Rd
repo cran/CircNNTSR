@@ -1,25 +1,32 @@
-\name{nntsrandominitial}
+\name{nntsplotInterval0to1}
 \Rdversion{1.0}
-\alias{nntsrandominitial}
+\alias{nntsplotInterval0to1}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Initial random point
+\title{Plots a NNTS density for incidence data defined in the interval [0,1]
 %%  ~~function to do ... ~~
 }
-\description{This function generates a random point on the surface of the (M+1)-dimensional unit hypersphere
+\description{Plots the NNTS density  for incidence data defined in the interval [0,1]
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-nntsrandominitial(M=1)
+nntsplotInterval0to1(cpars = 1/sqrt(2 * pi), M = 0, ...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{M}{Number of components in the NNTS
+  \item{cpars}{vector of complex numbers of dimension M+1. The first element is a real and positive number. The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). 
+%%     ~~Describe \code{cpars} here~~
+}
+  \item{M}{number of components in the NNTS
+%%     ~~Describe \code{M} here~~
+}
+  \item{\dots}{arguments passed for function curve
+%%     ~~Describe \code{\dots} here~~
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
-\value{Gives a valid initial point for estimation functions 
+\value{
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}

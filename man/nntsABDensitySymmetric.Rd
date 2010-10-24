@@ -1,25 +1,29 @@
-\name{nntsrandominitial}
+\name{nntsABDensitySymmetric}
 \Rdversion{1.0}
-\alias{nntsrandominitial}
+\alias{nntsABDensitySymmetric}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Initial random point
+\title{Density function with AB coefficients
 %%  ~~function to do ... ~~
 }
-\description{This function generates a random point on the surface of the (M+1)-dimensional unit hypersphere
+\description{Density function expressed in terms of ab parameters at theta
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-nntsrandominitial(M=1)
+nntsABDensitySymmetric(cpars = c(0, 0), M = 0, theta)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{M}{Number of components in the NNTS
+\item{theta}{a vector of angles in radians
+}
+  \item{cpars}{vector of complex numbers of dimension 2*M. 
+}
+  \item{M}{number of components in the NNTS
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
-\value{Gives a valid initial point for estimation functions 
+\value{Density function in terms of the ab coefficients evaluated at theta
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
@@ -32,7 +36,7 @@ nntsrandominitial(M=1)
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
 %%  ~~who you are~~
 }
-\note{
+\note{This function is required for compatibility in the Symmetric case
 %%  ~~further notes~~
 }
 
@@ -42,7 +46,6 @@ nntsrandominitial(M=1)
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 %\examples{
-
 %}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

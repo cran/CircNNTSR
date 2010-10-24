@@ -1,5 +1,5 @@
 \name{CircNNTSR-package}
-\Rdversion{1.1}
+\Rdversion{1.0}
 \alias{CircNNTSR-package}
 \alias{CircNNTSR}
 \docType{package}
@@ -13,8 +13,8 @@ A collection of utilities for the statistical analysis of circular data using no
 \tabular{ll}{
 Package: \tab CircNNTSR\cr
 Type: \tab Package\cr
-Version: \tab 0.1\cr
-Date: \tab 2009-08-31\cr
+Version: \tab 1.1\cr
+Date: \tab 2010-10-10\cr
 License: \tab GLP (>=2)\cr
 LazyLoad: \tab yes\cr
 }
@@ -62,29 +62,32 @@ Fernandez-Duran, J.J. (2004). Circular Distributions Based on Nonnegative Trigon
 Fernandez-Duran, J.J., Gregorio-Dominguez, M.M. (2009) Symmetric Circular Distributions Based on Nonnegative Trigonometric Sums. Working Paper, DE-C09.12, Department of Statistics, ITAM, Mexico
 }
 
-%\keyword{ package }
+\keyword{ package }
 %\seealso{
 %~~ Optional links to other man pages, e.g. ~~
 %~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 %}
 \examples{
 a<-c(runif(10,3*pi/2,2*pi-0.00000001),runif(10,pi/2,pi-0.00000001))
-est<-nntsestimation(2,a)
-nntsplot(est$coef,2)
+#Estimation of the NNTSdensity with 2 components for data and 1000 iterations
+est<-nntsmanifoldnewtonestimation(a,2,1000)
+#plot the estimated density
+nntsplot(est$cestimates[,2],2)
+
+data(Turtles_radians)
+#Empirical analysis of data
+Turtles_hist<-hist(Turtles_radians,breaks=10,freq=FALSE)
+#Estimation of the NNTS density with 3 componentes for data
+est<-nntsmanifoldnewtonestimation(Turtles_radians,3)
+est
+#plot the estimated density
+nntsplot(est$cestimates[,2],3)
+#add the histogram to the estimated density plot
+plot(Turtles_hist, freq=FALSE, add=TRUE)
 
 b<-c(runif(10,3*pi/2,2*pi-0.00000001),runif(10,pi/2,pi-0.00000001))
 estS<-nntsestimationSymmetric(2,b)
 nntsplotSymmetric(estS$coef,2)
 
-data(ants_radians)
-#Empirical analysis of data
-ants_hist<-hist(ants_radians,breaks=10,freq=FALSE)
-#Estimation of the NNTS density with 3 componentes for data
-est<-nntsestimation(3,ants_radians)
-#Verify successful optimization (est$convergence must be equal to 0)
-est
-#plot the estimated density
-nntsplot(est$coef,3)
-#add the histogram to the estimated density plot
-plot(ants_hist, freq=FALSE, add=TRUE)
+
 }

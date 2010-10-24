@@ -48,9 +48,9 @@ The default values give the Uniform circular density
 %\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 %}
-\examples{
-nntsSymmetricDensity(c(.01,.02,2),2,pi)
-}
+%\examples{
+%nntsSymmetricDensity(c(.01,.02,2),2,pi)
+%}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 %\keyword{ ~kwd1 }

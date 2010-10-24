@@ -43,7 +43,6 @@ For the maximization of the loglikelihood function the function constrOptim from
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 %}
 \examples{
-
 b<-c(runif(10,3*pi/2,2*pi-0.00000001),runif(10,pi/2,pi-0.00000001))
 estS<-nntsestimationSymmetric(2,b)
 nntsplotSymmetric(estS$coef,2)

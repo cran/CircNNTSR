@@ -1,24 +1,14 @@
 nntsloglik <-
-function(cpars=c(0,0),M=0,data){
-
-size<-length(cpars)
-if ((size %% 2)==1)
-return("Length of cpar must be an even number")
-if (size<2*M)
+function (data, cpars = 1/sqrt(2*pi), M = 0) 
 {
-temp<-size/2+1
-cparscorr<-c(cpars[1:(size/2)],array(0,(M-temp+1)), cpars[temp:size], array(0,(M-temp+1)))
-cpars<-cparscorr
-cat("Warning: Missing parameters set to 0
-")
-}
-
-y <- 0
-for (k in 1:length(data))
-{
-y <- y - log(nntsdensity(cpars,M,data[k]))
-}
-res <- Re(y)
-return(res)
+    if (M == 0) 
+        return(-length(data)*log(2 * pi))
+    size <- length(cpars)
+    if (size != M+1) 
+        return("Length of cpars must be equal to M+1")
+    if (abs(sum(Mod(cpars)^2) - 1/(2 * pi)) > 0.0000000001) 
+        return("sum of the squared norms of componentes greater than condition")
+    y<-sum(log(nntsdensity(data, cpars,M)))
+    return(y)
 }
 

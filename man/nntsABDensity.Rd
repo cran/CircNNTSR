@@ -1,52 +1,55 @@
 \name{nntsABDensity}
-\Rdversion{0.1}
+\Rdversion{1.0}
 \alias{nntsABDensity}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Density function with AB coefficients
+%%  ~~function to do ... ~~
 }
-\description{
-Density function expressed in terms of ab parameters
+\description{Density function expressed in terms of ab parameters at theta
+%%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-nntsABDensity(cpars = c(0, 0), M = 0, theta)
+nntsABDensity(theta, cpars = 1/sqrt(2 * pi), M = 0)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{cpars}{vector of real numbers of dimension 2*M. The first M numbers are the SQUARED moduli of the c parameters, the sum must be less than 1/(2*pi). The last M numbers are the arguments of the c parameters
+\item{theta}{a vector of angles in radians
+}
+  \item{cpars}{vector of complex numbers of dimension M+1. The first element is a real and positive number. The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). 
 }
   \item{M}{number of components in the NNTS
 }
-  \item{theta}{an angle in radians
 }
-}
-%\details{
+\details{
 %%  ~~ If necessary, more details than the description above ~~
-%}
-\value{Density function in terms of the ab coefficients evaluated in theta
+}
+\value{Density function in terms of the ab coefficients evaluated at theta
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 }
-%\references{
+\references{
 %% ~put references to the literature/web site here ~
-%}
-\author{
-Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
 }
-%\note{
+\author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
+%%  ~~who you are~~
+}
+\note{
 %%  ~~further notes~~
-%}
+}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-%\seealso{
+\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-%}
-%\examples{
-
-%}
+}
+\examples{
+ccoef<-nntsrandominitial(3)
+nntsABDensity(1,ccoef,3)
+nntsABDensity(1+2*pi,ccoef,3)
+}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 %\keyword{ ~kwd1 }

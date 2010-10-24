@@ -1,6 +1,6 @@
-\name{turtles}
+\name{Turtles}
 \Rdversion{0.1}
-\alias{turtles}
+\alias{Turtles}
 \docType{data}
 \title{
 Movements of turtles
@@ -8,7 +8,7 @@ Movements of turtles
 \description{
 Data measurement of the directions taken by 76 turtles after treatment
 }
-\usage{data(turtles)}
+\usage{data(Turtles)}
 \format{Directions of turtles in degrees}
 
 %\details{
@@ -20,7 +20,7 @@ of Statistics, Stanford University. Stanford, CA.}
 N.I. Fisher (1993) Statistical analysis of circular data. Cambridge University Press.
 }
 %\examples{
-%data(turtles)
-%## maybe str(turtles) ; plot(turtles) ...
+%data(Turtles)
+%## maybe str(Turtles) ; plot(Turtles) ...
 %}
 %\keyword{datasets}

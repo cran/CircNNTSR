@@ -1,57 +1,60 @@
 \name{nntsloglik}
-\Rdversion{0.1}
+\Rdversion{1.0}
 \alias{nntsloglik}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-NNTS log-likelihood function
+\title{NNTS log-likelihood function
+%%  ~~function to do ... ~~
 }
-\description{
-Computes the log-likelihood function with NNTS density for data
+\description{Computes the log-likelihood function with NNTS density for data
+%%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-nntsloglik(cpars = c(0, 0), M = 0, data)
+nntsloglik(data, cpars = 1/sqrt(2 * pi), M = 0)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{cpars}{
-vector of real numbers of dimension 2*M. The first M numbers are the SQUARED moduli of the c parameters, the sum must be less than 1/(2*pi). The last M numbers are the arguments of the c parameters
+  \item{data}{
+vector with observed angles in radians. 
+}
+ \item{cpars}{
+vector of complex numbers of dimension M+1. The first element is a real and positive number. The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). 
 }
   \item{M}{
 number of components in the NNTS
 }
-  \item{data}{
-vector with observed angles in radians. 
 }
-}
-%\details{
+\details{
 %%  ~~ If necessary, more details than the description above ~~
-%}
-\value{The function gives the value of the log-likelihood function for the data
+}
+\value{The function gives negative of the value of the log-likelihood function for the data
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 }
-\references{
-Fernandez-Duran, J.J. (2004). Circular Distributions Based on Nonnegative Trigonometric Sums, Biometrics, 60(2), 499-503.
+\references{Fernandez-Duran, J.J. (2004). Circular Distributions Based on Nonnegative Trigonometric Sums, Biometrics, 60(2), 499-503.
+%% ~put references to the literature/web site here ~
 }
-\author{
-Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
+\author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
+%%  ~~who you are~~
 }
 \note{
-The default values give the Uniform circular log-likelihood for data
+%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-%\seealso{
+\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-%}
-\examples{
-
-
-nntsloglik(c(.01,.02,1,2),2,t(c(pi,pi/2,2*pi,pi)))
 }
+\examples{
+a<-c(runif(10,3*pi/2,2*pi-0.00000001),runif(10,pi/2,pi-0.00000001))
+est<-nntsmanifoldnewtonestimation(a,2)
+ccoef<-est$cestimates[,2]
+nntsloglik(a,ccoef,2)
+}
+% Add one or more standard keywords, see file 'KEYWORDS' in the
+% R documentation directory.
 %\keyword{ ~kwd1 }
 %\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

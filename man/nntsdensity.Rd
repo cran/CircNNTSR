@@ -1,57 +1,59 @@
 \name{nntsdensity}
-\Rdversion{0.1}
+\Rdversion{1.0}
 \alias{nntsdensity}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-NNTS density function
+\title{NNTS density function
+%%  ~~function to do ... ~~
 }
-\description{
-Density function for the NNTS model
+\description{Density function for the NNTS model
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-nntsdensity(cpars = c(0, 0), M = 0, theta)
+nntsdensity(data, cpars = 1/sqrt(2 * pi), M = 0)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
+  \item{data}{
+a vector of angles in radians
+}
   \item{cpars}{
-vector of real numbers of dimension 2*M. The first M numbers are the SQUARED moduli of the c parameters, the sum must be less than 1/(2*pi). The last M numbers are the arguments of the c parameters
+vector of complex numbers of dimension M+1. The first element is a real and positive number. The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). 
 }
   \item{M}{
 number of components in the NNTS
 }
-  \item{theta}{
-an angle in radians
 }
-}
-%\details{
+
+\details{
 %%  ~~ If necessary, more details than the description above ~~
-%}
-\value{The function gives the density function evaluated at theta
+}
+\value{The function gives the density function evaluated at each point in data
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 }
-\references{
-Fernandez-Duran, J.J. (2004). Circular Distributions Based on Nonnegative Trigonometric Sums, Biometrics, 60(2), 499-503.
+\references{Fernandez-Duran, J.J. (2004). Circular Distributions Based on Nonnegative Trigonometric Sums, Biometrics, 60(2), 499-503.
+%% ~put references to the literature/web site here ~
 }
-\author{
-Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
+\author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
+%%  ~~who you are~~
 }
 \note{
-The default values give the Uniform circular density
+%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-%\seealso{
+\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-%}
+}
 \examples{
-
-nntsdensity(c(.01,.02,1,2),2,pi)
+ccoef<-nntsrandominitial(3)
+nntsdensity(1,ccoef,3)
+nntsdensity(1+pi,ccoef,3)
+nntsdensity(c(1,1+pi),ccoef,3)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
