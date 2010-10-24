@@ -1,10 +1,8 @@
 \name{nntsDistribution}
-\Rdversion{1.0}
+\Rdversion{1.0-1}
 \alias{nntsDistribution}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{NNTS Distribution function
-%%  ~~function to do ... ~~
-}
+\title{NNTS Distribution function}
 \description{Cumulative distribution function in terms of c parameters at theta
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
@@ -21,9 +19,9 @@ vector of complex numbers of dimension M+1. The first element is a real and posi
 number of components in the NNTS
 }
 }
-\details{
+%\details{
 %%  ~~ If necessary, more details than the description above ~~
-}
+%}
 \value{The function gives the value of the cumulative distribution function evaluated at each component of theta
 %%  ~Describe the value returned
 %%  If it is a LIST, use
@@ -31,21 +29,21 @@ number of components in the NNTS
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 }
-\references{
+%\references{
 %% ~put references to the literature/web site here ~
-}
+%}
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
 %%  ~~who you are~~
 }
-\note{
+%\note{
 %%  ~~further notes~~
-}
+%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
+%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
+%}
 \examples{
 ccoef<-nntsrandominitial(3)
 nntsDistribution(c(0,pi/2,pi,2*pi-.000001),ccoef,3)

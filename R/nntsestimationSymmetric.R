@@ -1,5 +1,4 @@
-nntsestimationSymmetric<-
-function (M = 0, data, maxit = 500) 
+nntsestimationSymmetric <- function (M = 0, data, maxit = 500) 
 {
     if (M == 0) 
         return("Uniform distribution: no parameters to estimate")

@@ -1,15 +1,14 @@
 \name{nntsmanifoldnewtonestimation}
-\Rdversion{1.0}
+\Rdversion{1.0-1}
 \alias{nntsmanifoldnewtonestimation}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Parameter estimation for NNTS distributions
-%%  ~~function to do ... ~~
-}
+\title{Parameter estimation for NNTS distributions}
 \description{Computes the maximum likelihood estimates of the NNTS parameters, through a Newton algorithm on the hypersphere
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-nntsmanifoldnewtonestimation(data, M=0, iter=1000, initialpoint = FALSE, cinitial)
+nntsmanifoldnewtonestimation(data, M=0, iter=1000, 
+initialpoint = FALSE, cinitial)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -17,13 +16,13 @@ nntsmanifoldnewtonestimation(data, M=0, iter=1000, initialpoint = FALSE, cinitia
   \item{M}{Number of components in the NNTS}
   \item{iter}{Number of iterations}
   \item{initialpoint}{TRUE if an initial point for the optimization algorithm will be used}
-  \item{cinitial}{A vector of size M+1, the first element is real and the next M elements are complex (values for $c_0$ and $c_1, \ldots,c_M$). The sum of the squared moduli of the parameters must be equal to 1/(2*pi)}
+  \item{cinitial}{A vector of size M+1, the first element is a nonnegative real number (\eqn{c_0}{c_0}) and the next M elements are complex (\eqn{c_1, \ldots,c_M}{c_1, ...,c_M}). The sum of the squared moduli of the parameters must be equal to \eqn{\frac{1}{2\pi}}{1/(2*pi)}}
 }
-\details{
+%\details{
 %%  ~~ If necessary, more details than the description above ~~
-}
+%}
 \value{
-\item{cestimates }{A matrix of (M+1)x2, the first column are the parameter number and the second column the parameter's c estimators}
+\item{cestimates }{A matrix with (M+1) rows and 2 columns, the first column are the parameter index numbers and the second column the parameter c estimates}
 \item{loglik}{Optimum loglikelihood value}
 \item{AIC}{Value of Akaike's Information Criterion}
 \item{BIC}{Value of Bayesian Information Criterion}
@@ -31,17 +30,15 @@ nntsmanifoldnewtonestimation(data, M=0, iter=1000, initialpoint = FALSE, cinitia
 %% ...
 }
 \references{Fernandez-Duran, J.J., Gregorio-Dominguez, M.M. (2010). Maximum Likelihood Estimation
-of Nonnegative Trigonometric Sums Models by Using a Newton-like Algorithm on Manifolds, 
-Working Paper, Department of Statistics, ITAM, DE-C10.8
-
-%% ~put references to the literature/web site here ~
+of Nonnegative Trigonometric Sum Models Using a Newton-like Algorithm on Manifolds, 
+arXiv:1010.6098v1
 }
 \author{Juan Jose Fernandez-Duran y Maria Mercedes Gregorio-Dominguez
 %%  ~~who you are~~
 }
-\note{
+%\note{
 %%  ~~further notes~~
-}
+%}
 
 %% ~Make other sections like Warning with 
 %\section{Warning }{....} ~

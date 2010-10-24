@@ -1,10 +1,8 @@
 \name{nntsdensity}
-\Rdversion{1.0}
+\Rdversion{1.0-1}
 \alias{nntsdensity}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{NNTS density function
-%%  ~~function to do ... ~~
-}
+\title{NNTS density function}
 \description{Density function for the NNTS model
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
@@ -24,10 +22,10 @@ number of components in the NNTS
 }
 }
 
-\details{
+%\details{
 %%  ~~ If necessary, more details than the description above ~~
-}
-\value{The function gives the density function evaluated at each point in data
+%}
+\value{The function gives the density function evaluated at each component of data
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
@@ -40,15 +38,15 @@ number of components in the NNTS
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
 %%  ~~who you are~~
 }
-\note{
+%\note{
 %%  ~~further notes~~
-}
+%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
+%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
+%}
 \examples{
 ccoef<-nntsrandominitial(3)
 nntsdensity(1,ccoef,3)

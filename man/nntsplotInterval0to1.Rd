@@ -1,10 +1,8 @@
 \name{nntsplotInterval0to1}
-\Rdversion{1.0}
+\Rdversion{1.0-1}
 \alias{nntsplotInterval0to1}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Plots a NNTS density for incidence data defined in the interval [0,1]
-%%  ~~function to do ... ~~
-}
+\title{Plots a NNTS density defined in the interval [0,1]}
 \description{Plots the NNTS density  for incidence data defined in the interval [0,1]
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
@@ -23,31 +21,31 @@ nntsplotInterval0to1(cpars = 1/sqrt(2 * pi), M = 0, ...)
 %%     ~~Describe \code{\dots} here~~
 }
 }
-\details{
+%\details{
 %%  ~~ If necessary, more details than the description above ~~
-}
-\value{
+%}
+%\value{
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
-}
-\references{
+%}
+%\references{
 %% ~put references to the literature/web site here ~
-}
+%}
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
 %%  ~~who you are~~
 }
-\note{
+%\note{
 %%  ~~further notes~~
-}
+%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
+%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
+%}
 %\examples{
 
 %}

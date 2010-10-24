@@ -1,11 +1,9 @@
 \name{nntsrandominitialSymmetric}
-\Rdversion{1.0}
+\Rdversion{1.0-1}
 \alias{nntsrandominitialSymmetric}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Initial random point
-%%  ~~function to do ... ~~
-}
-\description{This function generates a random point on the surface of the (M+1)-dimensional unit hypersphere
+\title{Initial random point}
+\description{This function generates a random vector. The first M elements are the squared moduli of the c parameters and the element M+1 is an angle in [0,2*pi]
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -16,31 +14,31 @@ nntsrandominitialSymmetric(M)
   \item{M}{Number of components in the NNTS
 }
 }
-\details{
+%\details{
 %%  ~~ If necessary, more details than the description above ~~
-}
-\value{Gives a valid initial point for estimation functions nntsestimation and nntsestimationSymmetric
+%}
+\value{Returns a valid initial point for estimation function nntsestimationSymmetric
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 }
-\references{
+%\references{
 %% ~put references to the literature/web site here ~
-}
+%}
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
 %%  ~~who you are~~
 }
-\note{
+%\note{
 %%  ~~further notes~~
-}
+%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
+%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
+%}
 %\examples{
 
 %}

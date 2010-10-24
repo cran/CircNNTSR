@@ -1,11 +1,9 @@
 \name{nntsDensityInterval0to1}
-\Rdversion{1.0}
+\Rdversion{1.0-1}
 \alias{nntsDensityInterval0to1}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{NNTS density function for incidence data defined in the interval [0,1]
-%%  ~~function to do ... ~~
-}
-\description{Computes the density function for incidence data (number of observed values in certain intervals defined in the interval [0,1]) at theta
+\title{NNTS density function for data defined on the interval [0,1]}
+\description{Computes the NNTS density function defined on the interval [0,1] at theta
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -13,7 +11,7 @@ nntsDensityInterval0to1(theta, cpars = 1/sqrt(2 * pi), M = 0)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{theta}{Vector of values defined in the interval [0,1] at which the distribution function is computed
+  \item{theta}{Vector of values defined in the interval [0,1] at which the density function is computed
 %%     ~~Describe \code{theta} here~~
 }
   \item{cpars}{vector of complex numbers of dimension M+1. The first element is a real and positive number. The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). 
@@ -23,9 +21,9 @@ nntsDensityInterval0to1(theta, cpars = 1/sqrt(2 * pi), M = 0)
 %%     ~~Describe \code{M} here~~
 }
 }
-\details{
+%\details{
 %%  ~~ If necessary, more details than the description above ~~
-}
+%}
 \value{Value of density function at each component of theta
 %%  ~Describe the value returned
 %%  If it is a LIST, use
@@ -33,21 +31,21 @@ nntsDensityInterval0to1(theta, cpars = 1/sqrt(2 * pi), M = 0)
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 }
-\references{
+%\references{
 %% ~put references to the literature/web site here ~
-}
+%}
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
 %%  ~~who you are~~
 }
-\note{
+%\note{
 %%  ~~further notes~~
-}
+%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
+%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
+%}
 \examples{
 ccoef<-nntsrandominitial(3)
 nntsDensityInterval0to1(c(.8,1.8),ccoef,3)

@@ -1,13 +1,10 @@
 \name{nntsABcoefficients}
-\Rdversion{1.0}
+\Rdversion{1.0-1}
 \alias{nntsABcoefficients}
-%- Also NEED an '\alias' for EACH other topic documented here.
-\title{AB coefficients
-%%  ~~function to do ... ~~
-}
+\title{AB coefficients}
 \description{This function transforms the complex parameters c to the parameters ab, for a
 reparameterization of the density function
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+
 }
 \usage{
 nntsABcoefficients(cpars = 1/sqrt(2 * pi), M = 0)
@@ -15,39 +12,31 @@ nntsABcoefficients(cpars = 1/sqrt(2 * pi), M = 0)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{cpars}{
-vector of complex numbers of dimension M+1. The first element is a real and positive number. The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). 
+vector of complex numbers of dimension \eqn{M+1}{M+1}. The first element is a real and positive number. The sum of the SQUARED moduli of the \eqn{c}{c} parameters must be equal to \eqn{\frac{1}{2\pi}}{1/(2*pi)}. 
 }
   \item{M}{
 number of components in the NNTS
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
+
+\value{The function returns the parameters ab associated with the pararameters cpars. Returns a vector of size \eqn{2M}{2*M},
+the first \eqn{M}{M} elements are the \eqn{a_k, k=1,\ldots,M}{a_k, k=1,...,M}, and the next \eqn{M}{M} elements are the \eqn{b_k, k=1,\dots,M}{b_k, k=1,...,M}
 }
-\value{The function returns the parameters ab associated with the pararameters cpars. Returns a vector of size 2*M,
-the first M elements are the a_k, k=1,...,M, and the next
-M elements are the b_k, k=1,...,M
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
-}
-\references{
+%\references{
 %% ~put references to the literature/web site here ~
-}
+%}
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
 %%  ~~who you are~~
 }
-\note{
+%\note{
 %%  ~~further notes~~
-}
+%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
+%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
+%}
 \examples{
 #random generation of c parameters
 ccoef<-nntsrandominitial(3)

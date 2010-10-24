@@ -1,10 +1,8 @@
 \name{nntsABDensity}
-\Rdversion{1.0}
+\Rdversion{1.0-1}
 \alias{nntsABDensity}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Density function with AB coefficients
-%%  ~~function to do ... ~~
-}
+\title{Density function with AB coefficients}
 \description{Density function expressed in terms of ab parameters at theta
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
@@ -20,9 +18,9 @@ nntsABDensity(theta, cpars = 1/sqrt(2 * pi), M = 0)
   \item{M}{number of components in the NNTS
 }
 }
-\details{
+%\details{
 %%  ~~ If necessary, more details than the description above ~~
-}
+%}
 \value{Density function in terms of the ab coefficients evaluated at theta
 %%  ~Describe the value returned
 %%  If it is a LIST, use
@@ -30,21 +28,21 @@ nntsABDensity(theta, cpars = 1/sqrt(2 * pi), M = 0)
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 }
-\references{
+%\references{
 %% ~put references to the literature/web site here ~
-}
+%}
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
 %%  ~~who you are~~
 }
-\note{
+%\note{
 %%  ~~further notes~~
-}
+%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
+%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
+%}
 \examples{
 ccoef<-nntsrandominitial(3)
 nntsABDensity(1,ccoef,3)
