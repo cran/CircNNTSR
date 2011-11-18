@@ -1,5 +1,5 @@
 \name{nntsdensity}
-\Rdversion{1.0-1}
+\Rdversion{1.0}
 \alias{nntsdensity}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{NNTS density function}
@@ -22,10 +22,10 @@ number of components in the NNTS
 }
 }
 
-%\details{
+%%\details{
 %%  ~~ If necessary, more details than the description above ~~
-%}
-\value{The function gives the density function evaluated at each component of data
+%%}
+\value{The function gives the density function evaluated at each point in data
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
@@ -35,18 +35,16 @@ number of components in the NNTS
 \references{Fernandez-Duran, J.J. (2004). Circular Distributions Based on Nonnegative Trigonometric Sums, Biometrics, 60(2), 499-503.
 %% ~put references to the literature/web site here ~
 }
-\author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
-%%  ~~who you are~~
-}
-%\note{
+\author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez}
+%%\note{
 %%  ~~further notes~~
-%}
+%%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-%\seealso{
+%%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-%}
+%%}
 \examples{
 ccoef<-nntsrandominitial(3)
 nntsdensity(1,ccoef,3)

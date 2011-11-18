@@ -1,18 +1,18 @@
 \name{nntsSymmetricDensity}
-\Rdversion{1.0-1}
+\Rdversion{0.1}
 \alias{nntsSymmetricDensity}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Symmetric NNTS density function}
 \description{Density function for the Symmetric NNTS
 }
 \usage{
-nntsSymmetricDensity(cparsym=0, M = 0, theta)
+nntsSymmetricDensity(cpars = c(0, 0), M = 0, theta)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{cparsym}{
+  \item{cpars}{
 %%     ~~Describe \code{cpars} here~~
-vector of length M+1, the first M components are the squared moduli of the c  parameters the last number is the angle of symmetry
+vector of real numbers of dimension 2*M. The first M numbers are the SQUARED moduli of the c parameters, the sum must be less than 1/(2*pi). The last number is the mean of symmetry
 }
   \item{M}{
 %%     ~~Describe \code{M} here~~
@@ -48,9 +48,9 @@ The default values give the Uniform circular density
 %\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 %}
-\examples{
-nntsSymmetricDensity(c(.01,.02,2),2,pi)
-}
+%\examples{
+%nntsSymmetricDensity(c(.01,.02,2),2,pi)
+%}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 %\keyword{ ~kwd1 }

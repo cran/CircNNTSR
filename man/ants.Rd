@@ -1,5 +1,5 @@
 \name{Ants}
-\Rdversion{1.0-1}
+\Rdversion{0.1}
 \alias{Ants}
 \docType{data}
 \title{
@@ -14,5 +14,8 @@ black target.
 Randomly selected values by Fisher (1993) from Jander (1957)}
 \references{
 N.I. Fisher (1993) Statistical analysis of circular data. Cambridge University Press.}
-
+%\examples{
+%data(Ants)
+%## maybe str(Ants) ; plot(Ants) ...
+%}
 \keyword{datasets}

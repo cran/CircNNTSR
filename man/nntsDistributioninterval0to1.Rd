@@ -1,9 +1,9 @@
 \name{nntsDistributioninterval0to1}
-\Rdversion{1.0-1}
+\Rdversion{1.0}
 \alias{nntsDistributioninterval0to1}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{NNTS distribution function for incidence data defined in the interval [0,1]}
-\description{Computes the NNTS distribution function defined on the interval [0,1] at theta
+\description{Computes the distribution function for incidence data (number of observed values in certain intervals defined in the interval [0,1]) at theta
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -22,9 +22,9 @@ nntsDistributioninterval0to1(theta, cpars = 1/sqrt(2 * pi), M = 0)
 }
   
 }
-%\details{
+%%\details{
 %%  ~~ If necessary, more details than the description above ~~
-%}
+%%}
 \value{Value of distribution function at theta
 %%  ~Describe the value returned
 %%  If it is a LIST, use
@@ -32,21 +32,21 @@ nntsDistributioninterval0to1(theta, cpars = 1/sqrt(2 * pi), M = 0)
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 }
-%\references{
+%%\references{
 %% ~put references to the literature/web site here ~
-%}
+%%}
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
 %%  ~~who you are~~
 }
-%\note{
+%%\note{
 %%  ~~further notes~~
-%}
+%%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-%\seealso{
+%%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-%}
+%%}
 %\examples{
 
 %}

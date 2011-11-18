@@ -1,4 +1,4 @@
-nntsplot <-function (cpars= 1/sqrt(2*pi), M = 0, ...) 
+nntsplot <-function (cpars = 1/sqrt(2*pi), M = 0, ...) 
 {
     if (M == 0) {
         x <- rep(1/(2 * pi), 2)

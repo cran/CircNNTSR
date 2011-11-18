@@ -1,5 +1,5 @@
 \name{nntsplot}
-\Rdversion{1.0-1}
+\Rdversion{1.0}
 \alias{nntsplot}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Plots a NNTS density}
@@ -19,31 +19,29 @@ number of components in the NNTS
 }
   \item{\dots}{arguments passed for function curve}
 }
-%\details{
+%%\details{
 %%  ~~ If necessary, more details than the description above ~~
-%}
-%\value{
+%%}
+%%\value{
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
-%}
-%\references{
+%%}
+%%\references{
 %% ~put references to the literature/web site here ~
-%}
-\author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
-%%  ~~who you are~~
-}
-%\note{
+%%}
+\author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez}
+%%\note{
 %%  ~~further notes~~
-%}
+%%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-%\seealso{
+%%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-%}
+%%}
 \examples{
 data(Turtles_radians)
 #Empirical analysis of data

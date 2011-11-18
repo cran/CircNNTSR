@@ -1,9 +1,8 @@
 \name{nntsestimationSymmetric}
-\Rdversion{1.0-1}
+\Rdversion{0.1}
 \alias{nntsestimationSymmetric}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{NNTS Symmetric Coefficient estimation
-}
+\title{NNTS Symmetric Coefficient estimation}
 \description{
 Computes the maximum likelihood estimates of the symmetric NNTS parameters
 }
@@ -20,7 +19,7 @@ nntsestimationSymmetric(M = 0, data, maxit = 500)
 %%  ~~ If necessary, more details than the description above ~~
 %}
 \value{
-  \item{coef}{vector of length M+1, the first M components are the squared moduli of the c  parameters the last number is the angle of symmetry}
+  \item{coef}{vector of length M+1, the first M components are the squared moduli of the c  parameters the last number is the mean of symmetry}
  \item{loglik}{optimum loglikelihood value}
   \item{AIC}{Value of Akaike's Information Criterion}
   \item{BIC}{Value of Bayesian Information Criterion}

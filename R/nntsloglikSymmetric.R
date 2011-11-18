@@ -1,14 +1,22 @@
-nntsloglikSymmetric <- function (cparsym = 0, M = 0, data) 
+nntsloglikSymmetric <-
+function(cpars=c(0,0),M=0,data){
+
+size<-length(cpars)-1
+if (size<M)
 {
-    size <- length(cparsym)
-    if (size != M + 1) 
-        return("Length of cpar must be equal to M + 1")
-    if (1/(2 * pi) - sum(cparsym[1:M]) < 0) 
-        return("sum of componentes greater than condition")
-    y <- 0
-    for (k in 1:length(data)) {
-        y <- y - log(nntsSymmetricDensity(cparsym, M, data[k]))
-    }
-    res <- Re(y)
-    return(res)
+temp<-size+1
+cparscorr<-c(cpars[1:size],array(0,(M-temp+1)),cpars[temp])
+cpars<-cparscorr
+cat("Warning: Missing parameters set to 0
+")
 }
+
+y <- 0
+for (k in 1:length(data))
+{
+y <- y - log(nntsSymmetricDensity(cpars,M,data[k]))
+}
+res <- Re(y)
+return(res)
+}
+

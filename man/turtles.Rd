@@ -1,5 +1,5 @@
 \name{Turtles}
-\Rdversion{1.0-1}
+\Rdversion{0.1}
 \alias{Turtles}
 \docType{data}
 \title{
@@ -23,4 +23,4 @@ N.I. Fisher (1993) Statistical analysis of circular data. Cambridge University P
 %data(Turtles)
 %## maybe str(Turtles) ; plot(Turtles) ...
 %}
-\keyword{datasets}
+%\keyword{datasets}

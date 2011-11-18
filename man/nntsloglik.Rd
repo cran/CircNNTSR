@@ -1,9 +1,9 @@
 \name{nntsloglik}
-\Rdversion{1.0-1}
+\Rdversion{1.0}
 \alias{nntsloglik}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{NNTS log-likelihood function}
-\description{Computes the log-likelihood function using a NNTS density function
+\description{Computes the log-likelihood function with NNTS density for data
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -21,10 +21,10 @@ vector of complex numbers of dimension M+1. The first element is a real and posi
 number of components in the NNTS
 }
 }
-%\details{
+%%\details{
 %%  ~~ If necessary, more details than the description above ~~
-%}
-\value{The function returns minus the log-likelihood function for data
+%%}
+\value{The function gives negative of the value of the log-likelihood function for the data
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
@@ -37,15 +37,15 @@ number of components in the NNTS
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
 %%  ~~who you are~~
 }
-%\note{
+%%\note{
 %%  ~~further notes~~
-%}
+%%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-%\seealso{
+%%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-%}
+%%}
 \examples{
 a<-c(runif(10,3*pi/2,2*pi-0.00000001),runif(10,pi/2,pi-0.00000001))
 est<-nntsmanifoldnewtonestimation(a,2)

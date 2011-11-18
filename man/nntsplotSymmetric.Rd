@@ -1,19 +1,19 @@
 \name{nntsplotSymmetric}
-\Rdversion{1.0-1}
+\Rdversion{0.1}
 \alias{nntsplotSymmetric}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-Plots a Symmetric NNTS density function
-}
+\title{Plots a Symmetric NNTS density function}
 \description{
 Plots the Symmetric NNTS density function
 }
 \usage{
-nntsplotSymmetric(cparsym = 0, M = 0, ...)
+nntsplotSymmetric(cpars = c(0, 0), M = 0, ...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{cparsym}{vector of length M+1, the first M components are the squared moduli of the c  parameters the last number is the mean of symmetry}
+  \item{cpars}{
+vector of real numbers of dimension 2*M. The first M numbers are the SQUARED moduli of the c parameters, the sum must be less than 1/(2*pi). The last number is the mean of symmetry
+}
   \item{M}{
 number of components in the NNTS
 }

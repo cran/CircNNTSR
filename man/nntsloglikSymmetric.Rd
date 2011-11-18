@@ -1,20 +1,18 @@
 \name{nntsloglikSymmetric}
-\Rdversion{1.0-1}
+\Rdversion{0.1}
 \alias{nntsloglikSymmetric}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-NNTS Symmetric log-likelihood function
-}
+\title{NNTS Symmetric log-likelihood function}
 \description{
-Computes the log-likelihood function using a NNTS symmetric density for data
+Computes the log-likelihood function with NNTS symmetric density for data
 }
 \usage{
-nntsloglikSymmetric(cparsym = 0, M = 0, data)
+nntsloglikSymmetric(cpars = c(0, 0), M = 0, data)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{cparsym}{
-vector of real numbers of dimension M+1. The first M numbers are the SQUARED moduli of the c parameters, the sum must be less than 1/(2*pi). The last number is the angle of symmetry
+  \item{cpars}{
+vector of real numbers of dimension M+1. The first M numbers are the SQUARED moduli of the c parameters, the sum must be less than 1/(2*pi). The last number is the mean of symmetry
 }
   \item{M}{
 number of components in the NNTS
