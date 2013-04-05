@@ -17,7 +17,7 @@ nntsrandominitialSymmetric(M)
 %%\details{
 %%  ~~ If necessary, more details than the description above ~~
 %%}
-\value{Gives a valid initial point for estimation functions nntsestimation and nntsestimationSymmetric
+\value{Returns a valid initial point for the estimation functions nntsestimation and nntsestimationSymmetric
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}

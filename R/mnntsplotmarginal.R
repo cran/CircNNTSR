@@ -1,8 +1,8 @@
-mnntsplotmarginal<-function(cestimatesarray,M,component, ...){
+mnntsplotmarginal<-function(cestimates,M,component, ...){
 
     nntsplotint <- function(theta) {
-        res <- mnntsmarginal(cestimatesarray,M,component,theta)
+        res <- mnntsmarginal(cestimates,M,component,theta)
 	return(res)
     }
-    return(curve(nntsplotint, 0, 2 * pi, xlab = paste("Component:",component), ...))
+    return(curve(nntsplotint, 0, 2 * pi, ylab="Marginal density function",xlab = paste("Component:",component), ...))
 }

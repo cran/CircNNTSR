@@ -1,16 +1,15 @@
 \name{Datab3fisher}
-\Rdversion{2.0}
+\Rdversion{2.1}
 \alias{Datab3fisher}
 \docType{data}
 \title{Database B3 from Fisher}
 \description{
-Database B3 from Fisher, et. al. (1987)
+Database B3 from Fisher et al. (1987)
 }
 \usage{data(Datab3fisher)}
 \format{Datab3fisher}
-\details{The data set Datab3fisher consists of 148 observations of the arrival
-directions of low
-mu showers of cosmic rays (Toyoda \emph{et al.}, 1965; see Fisher \emph{et
+\details{The dataset Datab3fisher consists of 148 observations of the arrival
+directions of low-mu showers of cosmic rays (Toyoda \emph{et al.}, 1965; see Fisher \emph{et
 al.}, 1987, pp. 280-281).
 The observations are measured in declination and right ascension coordinates.
 }

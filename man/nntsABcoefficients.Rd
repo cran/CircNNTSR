@@ -1,36 +1,22 @@
 \name{nntsABcoefficients}
 \Rdversion{1.0}
 \alias{nntsABcoefficients}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{AB coefficients}
-\description{This function transforms the complex parameters c to the parameters ab, for a
+\description{This function transforms the complex parameters c to the parameters ab for a
 reparameterization of the density function
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
 nntsABcoefficients(cpars = 1/sqrt(2 * pi), M = 0)
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
-  \item{cpars}{
-vector of complex numbers of dimension M+1. The first element is a real and positive number. The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). 
+  \item{cpars}{Vector of complex numbers of dimension M+1. The first element is a real and positive number. 
+The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). }
+  \item{M}{Number of components in the NNTS}
 }
-  \item{M}{
-number of components in the NNTS
-}
-}
-%%\details{
-%%  ~~ If necessary, more details than the description above ~~
-%%}
-\value{The function returns the parameters ab associated with the pararameters cpars. Returns a vector of size 2*M,
-the first M elements are the a_k, k=1,...,M, and the next
-M elements are the b_k, k=1,...,M
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
-}
+
+\value{The function returns the parameters ab associated with the parameters cpars and returns a vector of real numbers
+of size 2*M, where the first M elements are the a_k, k=1,...,M, and the next M elements are the b_k, k=1,...,M}
 %%\references{
 %% ~put references to the literature/web site here ~
 %%}
@@ -47,10 +33,10 @@ M elements are the b_k, k=1,...,M
 \examples{
 #random generation of c parameters
 ccoef<-nntsrandominitial(3)
+ccoef
 ab<-nntsABcoefficients(ccoef,3)
 ab
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
+
 %\keyword{ }
 %\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

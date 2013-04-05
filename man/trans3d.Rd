@@ -1,5 +1,5 @@
 \name{trans3d}
-\Rdversion{2.0}
+\Rdversion{2.1}
 \alias{trans3d}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Auxiliary function for plotting}
@@ -17,26 +17,9 @@ trans3d(x,y,z,pmat)
   \item{pmat}{pmat}
 }
 
-%%\details{
-%%  ~~ If necessary, more details than the description above ~~
-%%}
-%%\value{The function gives the density function evaluated at each row in data
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
-%%}
+\value{The function returns the density function evaluated for each row in the data}
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez}
-%%\note{
-%%  ~~further notes~~
-%%}
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
-%%\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-%%}
 
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

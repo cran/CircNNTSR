@@ -1,9 +1,9 @@
 \name{Datab3fisher_ready}
-\Rdversion{2.0}
+\Rdversion{2.1}
 \alias{Datab3fisher_ready}
 \docType{data}
-\title{Data transformed form Datab3fisher}
-\description{Data transformed form Datab3fisher}
+\title{Data transformed from Datab3fisher}
+\description{Data transformed from Datab3fisher}
 \usage{data(Datab3fisher_ready)}
 \format{Datab3fisher_ready}
 \details{

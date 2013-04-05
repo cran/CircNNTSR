@@ -1,15 +1,8 @@
 snntsmarginallatitude <- function(data,cpars=1,M=c(0,0)){
 
-#    auxcond1 <- sum(data[,1] > 2*pi) + sum(data[,1] < 0)
-#    auxcond2 <- sum(data[,2] > pi) + sum(data[,2] < 0)
-#    if (auxcond1>0)
-#	return("First column of the data matrix must have values between 0 and 2*pi")
-#    if (auxcond2>0)
-#	return("Second column of the data matrix must have values between 0 and pi")
-
     auxcond<-sum(data>pi)+sum(data<0)
     if (auxcond>0)
-	return("data must have values between 0 and pi")
+	return("Latitude data must have values between 0 and pi")
 
     A <- matrix(0,nrow=M[2]+1,ncol=M[2]+1)
 

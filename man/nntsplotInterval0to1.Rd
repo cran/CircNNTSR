@@ -1,53 +1,24 @@
 \name{nntsplotInterval0to1}
-\Rdversion{1.0}
+\Rdversion{2.1}
 \alias{nntsplotInterval0to1}
-%- Also NEED an '\alias' for EACH other topic documented here.
-\title{Plots a NNTS density for incidence data defined in the interval [0,1]}
-\description{Plots the NNTS density  for incidence data defined in the interval [0,1]
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+\title{Plots an NNTS density for a variable defined in the interval [0,1)}
+\description{Plots the NNTS density for a variable defined in the interval [0,1)
 }
-\usage{
-nntsplotInterval0to1(cpars = 1/sqrt(2 * pi), M = 0, ...)
-}
-%- maybe also 'usage' for other objects documented here.
+\usage{nntsplotInterval0to1(cpars = 1/sqrt(2 * pi), M = 0, ...)}
+
 \arguments{
-  \item{cpars}{vector of complex numbers of dimension M+1. The first element is a real and positive number. The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). 
-%%     ~~Describe \code{cpars} here~~
+\item{cpars}{Vector of complex numbers of dimension M+1. The first element is a real and positive number. 
+The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). }
+\item{M}{Number of components in the NNTS}
+\item{\dots}{Arguments passed to the function curve}
 }
-  \item{M}{number of components in the NNTS
-%%     ~~Describe \code{M} here~~
-}
-  \item{\dots}{arguments passed for function curve
-%%     ~~Describe \code{\dots} here~~
-}
-}
-%%\details{
-%%  ~~ If necessary, more details than the description above ~~
-%%}
-%%\value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
-%%}
-%%\references{
-%% ~put references to the literature/web site here ~
-%%}
+
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez}
-%%\note{
-%%  ~~further notes~~
-%%}
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
-%%\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-%%}
-%\examples{
-
-%}
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-%\keyword{ ~kwd1 }
-%\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+\examples{
+data<-c(1,2,4,6,2)
+cutpoints<-c(0,0.2,0.4,0.6,0.8,0.9999999)
+est<-nntsmanifoldnewtonestimationinterval0to1(data,cutpoints,5,1)
+cpars<-est$cestimates[,2]
+nntsplotInterval0to1(cpars, 1)
+}

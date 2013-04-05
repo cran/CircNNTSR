@@ -13,7 +13,7 @@ function (cpars = 1/sqrt(2*pi), M = 0, ...)
 
     nntsplotint <- function(theta) {
         res <- nntsDensityInterval0to1(theta, cpars, M)
-return(res)
+	return(res)
     }
     return(curve(nntsplotint, 0, 1, xlab = "theta", ...))
 }

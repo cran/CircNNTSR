@@ -11,7 +11,7 @@ for (k in 0:M[component]){
 res<-0
 for (k in 0:M[component]){
 	for (m in 0:M[component]){
-		res <- res + cparameters[k+1,m+1]*exp(1i*(k - m)*theta)
+		res <- res + cparameters[k+1,m+1]*exp((0+1i)*(k - m)*theta)
 	}
 }
 res<-Re(res)

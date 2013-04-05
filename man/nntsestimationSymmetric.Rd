@@ -3,28 +3,22 @@
 \alias{nntsestimationSymmetric}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{NNTS Symmetric Coefficient estimation}
-\description{
-Computes the maximum likelihood estimates of the symmetric NNTS parameters
-}
-\usage{
-nntsestimationSymmetric(M = 0, data, maxit = 500)
-}
+\description{Computes the maximum likelihood estimates of the symmetric NNTS parameters}
+\usage{nntsestimationSymmetric(M = 0, data, maxit = 500)}
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{M}{Number of components in the NNTS}
-  \item{data}{a vector of angles in radians}
-  \item{maxit}{maximum number of iterations in optimization algorithm}
+  \item{data}{Vector of angles in radians}
+  \item{maxit}{Maximum number of iterations in the optimization algorithm}
 }
-%\details{
-%%  ~~ If necessary, more details than the description above ~~
-%}
 \value{
-  \item{coef}{vector of length M+1, the first M components are the squared moduli of the c  parameters the last number is the mean of symmetry}
- \item{loglik}{optimum loglikelihood value}
+  \item{coef}{Vector of length M+1. The first M components are the squared moduli of the c parameters, and the last 
+number is the mean of symmetry}
+ \item{loglik}{Optimum log-likelihood value}
   \item{AIC}{Value of Akaike's Information Criterion}
   \item{BIC}{Value of Bayesian Information Criterion}
- \item{convergence}{An integer code: 0 indicates successful convergence; error codes are: 1
-indicates that the iteration limit maxit has been reached, 10 indicates degeneracy of the
+ \item{convergence}{An integer code: zero indicates successful convergence; error codes are the following: one
+indicates that the iteration limit maxit has been reached, and 10 indicates degeneracy of the
 Nelder-Mead simplex}
 }
 \references{

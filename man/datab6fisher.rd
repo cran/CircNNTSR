@@ -1,17 +1,16 @@
 \name{Datab6fisher}
-\Rdversion{2.0}
+\Rdversion{2.1}
 \alias{Datab6fisher}
 \docType{data}
-\title{Database B6 from Fisher, et al. (1987)}
+\title{Database B6 from Fisher et al. (1987)}
 \description{
 datab6fisher
 }
 \usage{data(Datab6fisher)}
-\format{Datab6fisher}
-\details{The data set Datab6fisher contains 107 measurements of magnetic remanence
-in samples of Precambrian volcanics collected in northwest Australia.
-The coordinates are declination and inclination measured in degrees
-(Schmidt and Embleton, 1985; see Fisher, et al., 1987, pp. 285).
+\format{The coordinates are declination and inclination measured in degrees}
+\details{The data-set Datab6fisher contains 107 measurements of magnetic remanence
+in samples of Precambrian volcanics collected in Northwest Australia.
+(Schmidt and Embleton, 1985; see Fisher et al., 1987, pp. 285).
 }
 \source{
 Fisher, et al. (1987)

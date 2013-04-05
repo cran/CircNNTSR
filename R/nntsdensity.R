@@ -1,23 +1,26 @@
 nntsdensity <-
 function (data, cpars = 1/sqrt(2*pi),M = 0) 
 {
-data<-as.matrix(data)
-n<-nrow(data)
-R<-1
-if (R != length(M))
-return("Error: Dimensions of M and vector of observations are not equal")
+	data<-as.matrix(data)
+	n<-nrow(data)
+	R<-1
+	if (R != length(M))
+		return("Error: M must correspond to a univariate variable")
 
-        if (abs(sum(Mod(cpars)^2) - (1/(2 * pi))) > 0.0000000001) 
-            return("sum of the squared norm of componentes greater than condition")
+	if (length(cpars) != (M+1))
+		return("Length of cpars must be equal to M+1")
 
-if (sum(M) == 0) 
-            return(rep(1/(2 * pi),n))
+	if (abs(sum(Mod(cpars)^2) - (1/(2 * pi))) > 0.0000000001) 
+   		return("Sum of the squared norm of componentes does not satisfy condition")
 
-gridcomb<-0:M
+	if (sum(M) == 0) 
+            return(t(rep(1/(2 * pi),n)))
 
-statisticsmatrix<-matrix(0,nrow=M+1,ncol=n)
+	gridcomb<-0:M
 
-statisticsmatrix<-exp(1i*gridcomb%*%t(data))
+	statisticsmatrix<-matrix(0,nrow=M+1,ncol=n)
+
+	statisticsmatrix<-exp(1i*gridcomb%*%t(data))
 
         aux <- t(cpars)%*%statisticsmatrix
         res <- aux * Conj(aux)

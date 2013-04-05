@@ -1,5 +1,9 @@
 mnntsrandominitial<- function(M=1,R=1) 
 {
+    if (sum(M)==0)
+        return(1/(2*pi)^R)
+    if (R != length(M)) 
+        return("Error: Length of M and number of dimensions are not equal")
     res <- complex(prod(M + 1))
     aux <- rnorm(2*prod(M + 1))
     aux <- sqrt((1/(2 * pi))^R) * (aux/sqrt(sum(aux^2)))

@@ -4,9 +4,9 @@ mnntsplot<- function(cestimates,M,...)
 	cpars<-cestimates[,3]
 	R<-2
 	if (length(M)!=2)
-		return("This is not a bivarate distribution")
+		return("Error: This is not a bivarate distribution")
 	if (abs(sum(Mod(cpars)^2) - ((1/(2 * pi))^R)) > 1e-10) 
-        return("sum of the squared norm of componentes greater than condition")
+        return("Error: Sum of the squared norm of componentes greater than condition")
 	x<-seq(0,2*pi-0.0000001,by=.1)
 	y<-seq(0,2*pi-0.0000001,by=.1)
 	z<-outer(x,y,mnntsdensity2d,cpars,M)

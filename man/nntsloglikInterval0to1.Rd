@@ -1,60 +1,26 @@
 \name{nntsloglikInterval0to1}
-\Rdversion{1.0}
+\Rdversion{2.1}
 \alias{nntsloglikInterval0to1}
-%- Also NEED an '\alias' for EACH other topic documented here.
-\title{NNTS log-likelihood function for incidence data defined in the interval [0,1]}
-\description{Computes the log-likelihood function for incidence data (number of observed values in certain intervals defined in the interval [0,1])
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
-}
-\usage{
-nntsloglikInterval0to1(data, cutpoints, cpars = 1/sqrt(2 * pi), M = 0)
-}
-%- maybe also 'usage' for other objects documented here.
+\title{NNTS log-likelihood function for the incidence data defined in the interval [0,1)}
+\description{Computes the log-likelihood function for incidence data (number of observed values in 
+certain intervals defined in the interval [0,1))}
+\usage{nntsloglikInterval0to1(data, cutpoints, cpars = 1/sqrt(2 * pi), M = 0)}
+
 \arguments{
-\item{data}{number of observations in each interval
-%%     ~~Describe \code{data} here~~
+\item{data}{Number of observations in each interval}
+\item{cutpoints}{Vector of size length(data)+1 with the limits of the intervals}
+\item{cpars}{Vector of complex numbers of dimension M+1. The first element is a real and positive number. 
+The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). }
+\item{M}{Number of components in the NNTS}
 }
-  \item{cutpoints}{vector of size length(data)+1 with the
-limits of the intervals
-%%     ~~Describe \code{cutpoints} here~~
-}
-  \item{cpars}{vector of complex numbers of dimension M+1. The first element is a real and positive number. The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). 
-%%     ~~Describe \code{cpars} here~~
-}
-  \item{M}{number of components in the NNTS
-%%     ~~Describe \code{M} here~~
-}
-  
-}
-%%\details{
-%%  ~~ If necessary, more details than the description above ~~
-%%}
-\value{The function gives the value of the log-likelihood function for data
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
-}
-%%\references{
-%% ~put references to the literature/web site here ~
-%%}
-\author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
-%%  ~~who you are~~
-}
-%%\note{
-%%  ~~further notes~~
-%%}
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
+\value{The function returns the value of the log-likelihood function for data}
 
-%%\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-%%}
-%\examples{
+\author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez}
 
-%}
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-%\keyword{ ~kwd1 }
-%\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+\examples{
+data<-c(1,2,6,4,1)
+cutpoints<-c(0,0.2,0.4,0.6,0.8,0.9999999)
+cpars<-nntsrandominitial(1)
+nntsloglikInterval0to1(data, cutpoints, cpars, 1)
+}

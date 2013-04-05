@@ -1,56 +1,24 @@
 \name{nntsDistributioninterval0to1}
-\Rdversion{1.0}
+\Rdversion{2.1}
 \alias{nntsDistributioninterval0to1}
-%- Also NEED an '\alias' for EACH other topic documented here.
-\title{NNTS distribution function for incidence data defined in the interval [0,1]}
-\description{Computes the distribution function for incidence data (number of observed values in certain intervals defined in the interval [0,1]) at theta
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
-}
-\usage{
-nntsDistributioninterval0to1(theta, cpars = 1/sqrt(2 * pi), M = 0)
-}
-%- maybe also 'usage' for other objects documented here.
+
+\title{NNTS distribution function for the incidence data defined in the interval [0,1)}
+\description{Computes the distribution function at theta for the incidence data (number of observed values in certain intervals 
+defined in the interval [0,1))}
+\usage{nntsDistributioninterval0to1(theta, cpars = 1/sqrt(2 * pi), M = 0)}
+
 \arguments{
-\item{theta}{Value at which the distribution function is computed
-%%     ~~Describe \code{theta} here~~
+\item{theta}{Value at which the distribution function is computed}
+\item{cpars}{Vector of complex numbers of dimension M+1. The first element is a real and positive number. 
+The sum of the squared moduli of the c parameters must be equal to 1/(2*pi). }
+\item{M}{Number of components in the NNTS}
 }
-  \item{cpars}{vector of complex numbers of dimension M+1. The first element is a real and positive number. The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). 
-%%     ~~Describe \code{cpars} here~~
-}
-  \item{M}{number of components in the NNTS
-%%     ~~Describe \code{M} here~~
-}
-  
-}
-%%\details{
-%%  ~~ If necessary, more details than the description above ~~
-%%}
-\value{Value of distribution function at theta
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
-}
-%%\references{
-%% ~put references to the literature/web site here ~
-%%}
-\author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez
-%%  ~~who you are~~
-}
-%%\note{
-%%  ~~further notes~~
-%%}
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
+\value{The function returns the Value of the distribution function at theta}
 
-%%\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-%%}
-%\examples{
+\author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez}
 
-%}
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-%\keyword{ ~kwd1 }
-%\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+\examples{
+cpars<-nntsrandominitial(2)
+nntsDistributioninterval0to1(pi, cpars, 2)
+}

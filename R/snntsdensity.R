@@ -12,8 +12,8 @@ snntsdensity <- function (data, cpars = 1, M = c(0,0))
     if (auxcond2>0)
 	return("Second column of the data matrix must have values between 0 and pi")
 
-    if (abs(sum(Mod(cpars)^2) - 1) > 1e-10) 
-        return("sum of the squared norm of componentes greater than condition")
+    if (abs(sum(Mod(cpars)^2) -  1) > 1e-10) 
+        return("cpars must lie on the surface of the unit hypersphere")
     if (sum(M) == 0)
 	return(sin(data[,2])/(4*pi))
 

@@ -3,31 +3,16 @@
 \alias{nntsABDensitySymmetric}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Density function with AB coefficients}
-\description{Density function expressed in terms of ab parameters at theta
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
-}
-\usage{
-nntsABDensitySymmetric(cpars = c(0, 0), M = 0, theta)
-}
-%- maybe also 'usage' for other objects documented here.
+\description{Density function expressed in terms of the ab parameters at theta}
+\usage{nntsABDensitySymmetric(cpars = c(0, 0), M = 0, theta)}
 \arguments{
-\item{theta}{a vector of angles in radians
-}
-  \item{cpars}{vector of complex numbers of dimension 2*M. 
-}
-  \item{M}{number of components in the NNTS
-}
-}
+\item{theta}{Vector of angles in radians}
+\item{cpars}{Vector of complex numbers of dimension 2*M}
+\item{M}{Number of components in the NNTS}}
 %%\details{
 %%  ~~ If necessary, more details than the description above ~~
 %%}
-\value{Density function in terms of the ab coefficients evaluated at theta
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
-}
+\value{Returns the density function in terms of the ab coefficients evaluated at theta}
 %%\references{
 %% ~put references to the literature/web site here ~
 %%}

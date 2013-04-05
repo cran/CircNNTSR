@@ -3,7 +3,7 @@ mnntsmanifoldnewtonestimation<-function (data, M = 0, R=1, iter = 1000, initialp
     data <- as.matrix(data)
     n <- nrow(data)
     if (R != length(M)) 
-        return("Error: Dimensions of M and vector of observations are not equal")
+        return("Error: Length of M and number of dimensions are not equal")
     
     sec<-list(R)
 
@@ -18,15 +18,20 @@ mnntsmanifoldnewtonestimation<-function (data, M = 0, R=1, iter = 1000, initialp
     statisticsmatrix <- exp(-(ind %*% t(data))*complex(real=0,imaginary=1))
 
 
-    if (initialpoint) 
+    if (initialpoint)
+    { 
+        size <- length(cinitial)
+    	if (size != prod(M + 1)) 
+        	return("Error: Length of cinitial must be equal to prod(M+1)")
         c0 <- cinitial
+    }
     else c0 <- apply(statisticsmatrix, 1, mean)
     c0 <- c0/sqrt(sum(Mod(c0)^2))
 
 
     eta <- matrix(0, nrow = prod(M + 1), ncol = 1)
-    for (k in 1:n) eta <- eta + (1/n) * (1/(t(Conj(c0)) %*% statisticsmatrix[, 
-        k])) * statisticsmatrix[, k]
+    for (k in 1:n) 
+	eta <- eta + (1/n) * (1/(t(Conj(c0)) %*% statisticsmatrix[, k])) * statisticsmatrix[, k]
     eta <- eta - c0
     newtonmanifold <- (c0 + eta)
     newtonmanifold <- newtonmanifold/sqrt(sum(Mod(newtonmanifold)^2))

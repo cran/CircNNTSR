@@ -1,49 +1,28 @@
 \name{snntsmarginallongitude}
-\Rdversion{2.0}
+\Rdversion{2.1}
 \alias{snntsmarginallongitude}
-%- Also NEED an '\alias' for EACH other topic documented here.
-\title{Marginal density function for longitude of the SNNTS model for spherical data}
-\description{Marginal density function for longitude of the SNNTS model for spherical data
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
-}
-\usage{
-snntsmarginallongitude(data, cpars = 1, M = c(0,0))
-}
-%- maybe also 'usage' for other objects documented here.
+\title{Marginal density function for the longitude of the SNNTS model for spherical data}
+\description{Marginal density function for the longitude of the SNNTS model for spherical data}
+\usage{snntsmarginallongitude(data, cpars = 1, M = c(0,0))}
+
 \arguments{
-  \item{data}{
-a vector of angles in radians, a row for each data point. must be between 0 and
-2*pi.
-}
-  \item{cpars}{
-vector of complex numbers of dimension prod(M+1). The first element is a real and positive number. 
-First M[1]+1 elements correspond to longitude, next M[2]+1 elements correspond to latitude.
-The sum of the SQUARED moduli of the c parameters must be equal to 1. 
-}
-  \item{M}{
-vector with number of components in the SNNTS for each dimension
-}
-  
+  \item{data}{Vector of angles in radians, with one row for each data point. The data must be between zero and 2*pi}
+  \item{cpars}{Vector of complex numbers of dimension prod(M+1). The first element is a real and positive 
+number. The first M[1]+1 elements correspond to longitude, and the next M[2]+1 elements correspond to latitude.
+The sum of the squared moduli of the c parameters must be equal to one. }
+  \item{M}{Vector with number of components in the SNNTS for each dimension}
 }
 
-%%\details{
-%%  ~~ If necessary, more details than the description above ~~
-%%}
-\value{The function gives the density function evaluated at data}
+\value{The function returns the density function evaluated for the data}
 \references{Fernandez-Duran J. J. y Gregorio Dominguez, M. M. (2008)
     Spherical Distributions Based on Nonnegative Trigonometric Sums, Working Paper, Statistics Department,
    ITAM, DE-C08.6
 }
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez}
-%%\note{
-%%  ~~further notes~~
-%%}
+\note{The parameters cpars used by this function are the transformed parameters of the SNNTS density
+function, which lie on the surface of the unit hypersphere}
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
-%%\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-%%}
 \examples{
 data(Datab6fisher_ready)
 data<-Datab6fisher_ready
@@ -53,7 +32,3 @@ long<-snntsmarginallongitude(seq(0,2*pi,.1),cest$cestimates[,3],M)
 plot(seq(0,2*pi,.1),long,type="l")
 }
 
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-%\keyword{ ~kwd1 }
-%\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

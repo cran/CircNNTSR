@@ -1,5 +1,5 @@
 \name{Ants}
-\Rdversion{0.1}
+\Rdversion{2.1}
 \alias{Ants}
 \docType{data}
 \title{

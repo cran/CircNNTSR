@@ -2,7 +2,7 @@ nntsplot <-function (cpars = 1/sqrt(2*pi), M = 0, ...)
 {
     if (M == 0) {
         x <- rep(1/(2 * pi), 2)
-        return(plot(c(0, 2 * pi), x, type = "l", xlab = "theta"))
+        return(plot(c(0, 2 * pi), x, type = "l", ...))
      }
      size <- length(cpars)
      if (size != M+1) 
@@ -14,6 +14,6 @@ nntsplot <-function (cpars = 1/sqrt(2*pi), M = 0, ...)
         res <- nntsdensity(theta, cpars, M)
         return(res)
     }
-    return(curve(nntsplotint, 0, 2 * pi, xlab = "theta", ...))
+    return(curve(nntsplotint, 0, 2 * pi, ...))
 }
 

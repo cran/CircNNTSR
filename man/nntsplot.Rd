@@ -1,47 +1,16 @@
-\name{nntsplot}
-\Rdversion{1.0}
+  \name{nntsplot}
+\Rdversion{2.1}
 \alias{nntsplot}
-%- Also NEED an '\alias' for EACH other topic documented here.
-\title{Plots a NNTS density}
-\description{Plots the NNTS density
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
-}
-\usage{
-nntsplot(cpars = 1/sqrt(2 * pi), M = 0, ...)
-}
-%- maybe also 'usage' for other objects documented here.
+\title{Plots the NNTS density}
+\description{Plots the NNTS density}
+\usage{nntsplot(cpars = 1/sqrt(2 * pi), M = 0, ...)}
 \arguments{
-\item{cpars}{
-vector of complex numbers of dimension M+1. The first element is a real and positive number. The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). 
+\item{cpars}{Vector of complex numbers of dimension M+1. The first element is a real and positive number. 
+The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). }
+\item{M}{Number of components in the NNTS}
+\item{\dots}{Arguments passed to the function curve}
 }
-  \item{M}{
-number of components in the NNTS
-}
-  \item{\dots}{arguments passed for function curve}
-}
-%%\details{
-%%  ~~ If necessary, more details than the description above ~~
-%%}
-%%\value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
-%%}
-%%\references{
-%% ~put references to the literature/web site here ~
-%%}
-\author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez}
-%%\note{
-%%  ~~further notes~~
-%%}
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
-%%\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-%%}
 \examples{
 data(Turtles_radians)
 #Empirical analysis of data
