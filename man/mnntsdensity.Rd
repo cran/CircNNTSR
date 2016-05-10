@@ -16,9 +16,10 @@ equal to 1/(2*pi). }
 }
 
 \value{The function returns the density function evaluated at each row in data}
-\references{Fernandez-Duran, J.J. and Gregorio-Dominguez, M.M. (2009) 
-    Multivariate Angular Distributions Based on Multiple Nonnegative Trigonometric Sums, 
-    Working Paper, Statistics Department, ITAM, DE-C09.1}
+    
+\references{
+Juan Jose Fernandez-Duran, Maria Mercedes Gregorio-Dominguez (2016). CircNNTSR: An R Package for the Statistical Analysis of Circular, Multivariate Circular, and Spherical Data Using Nonnegative Trigonometric Sums. Journal of Statistical Software, 70(6), 1-19. doi:10.18637/jss.v070.i06
+}
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez}
 
 \examples{

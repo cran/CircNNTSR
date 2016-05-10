@@ -1,4 +1,4 @@
-#Función auxiliar para la función de gráfica bivariada 
+#Funcion auxiliar para la funcion de grafica bivariada 
 
 
 mnntsdensity2d<-function (x,y, cpars,M) 

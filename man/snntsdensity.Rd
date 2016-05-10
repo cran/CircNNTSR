@@ -14,10 +14,10 @@ positive number. The sum of the squared moduli of the c parameters must be equal
 
 \value{The function returns the density function evaluated for each row in the data}
 
-\references{Fernandez-Duran J. J. y Gregorio Dominguez, M. M. (2008)
-    Spherical Distributions Based on Nonnegative Trigonometric Sums, Working Paper, Statistics Department,
-   ITAM, DE-C08.6
+\references{
+Juan Jose Fernandez-Duran, Maria Mercedes Gregorio-Dominguez (2016). CircNNTSR: An R Package for the Statistical Analysis of Circular, Multivariate Circular, and Spherical Data Using Nonnegative Trigonometric Sums. Journal of Statistical Software, 70(6), 1-19. doi:10.18637/jss.v070.i06
 }
+
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez}
 \note{The parameters cinitial and cestimates used by this function are the transformed parameters of the SNNTS density
 function, which lie on the surface of the unit hypersphere}

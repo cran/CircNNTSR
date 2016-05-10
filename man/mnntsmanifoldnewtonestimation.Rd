@@ -4,7 +4,7 @@
 \title{Parameter estimation for the MNNTS distributions}
 \description{Computes the maximum likelihood estimates of the MNNTS parameters using a Newton 
 algorithm on the hypersphere}
-\usage{mnntsmanifoldnewtonestimation(data, M = 0, R = 1, iter = 1000,initialpoint = FALSE, cinitial)}
+\usage{mnntsmanifoldnewtonestimation(data,M=0,R=1,iter=1000,initialpoint=FALSE,cinitial)}
 \arguments{
 \item{data}{Matrix of angles in radians, a column for each dimension, a row for each data point}
 \item{M}{Vector of length R with number of components in the MNNTS for each dimension}

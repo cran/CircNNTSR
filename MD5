@@ -1,7 +1,7 @@
-5a6c81dc56ee231e117268639ac4bcdd *DESCRIPTION
-df390c53434517b304ac5db487184641 *NAMESPACE
+8370abd1c7c9cba5cc8536b2d7fec6e0 *DESCRIPTION
+0ffa67202bb54224a11da4f0a2b0f094 *NAMESPACE
 5460068ba6ef2b363d9d9fce4c624153 *R/mnntsdensity.R
-5bddd12a6f5a081d25c7a995164cfb5e *R/mnntsdensity2d.R
+69f64cf80e094eefd90333a9914f0b4d *R/mnntsdensity2d.R
 8c1c134471e31e2a3a2ce6aff5928739 *R/mnntsloglik.R
 a42b1de1fc9fb872f2d72f111614ba52 *R/mnntsmanifoldnewtonestimation.R
 8df1ed3e7df8da286738f24b414b358e *R/mnntsmarginal.R
@@ -41,7 +41,7 @@ f85aeb82ab1ecd0f68e20e8b350cbdce *R/snntsmanifoldnewtonestimation.R
 bb4352dd9e96e88924ddf8bf8861566c *R/snntsmarginallatitude.R
 e8574df9e6612d5e200c1c12f6625d08 *R/snntsmarginallongitude.R
 4c0a5059aa70d1b9d1b30de684e484b3 *R/snntssimulation.R
-7cae9f0ae0456e69f130973a1286e992 *R/trans3d.R
+e17237fb74d1b64c8f0f68ae897b9d72 *R/trans3d.R
 64bbe4371135536de3ada4aa9861a036 *data/Ants.rda
 f1a1cfa0e103c67a8a6e18be0b32cb7d *data/Ants_radians.rda
 1469fe0340616adbf0d157e77d56ba51 *data/DataB5FisherSpherical.rda
@@ -61,9 +61,10 @@ c0a7ee128935b49c516d4d52507d3b22 *data/HurricanesGulfofMexico1971to2008.rda
 7ee5872bfbdc7bc95d22c4d8a6a62e0d *data/Turtles.rda
 d3966439ac52172e13c0acf910e94778 *data/Turtles_radians.rda
 5bd5ae0d93b2bbd5c691be17bbeaecd7 *data/WindDirectionsTrivariate.rda
+17068e98b4671560c651a69193265fe5 *inst/CITATION
 959acdc6fde2f4152683f262989e93a5 *man/Ants.Rd
 db6c4fa487a92cfe7078e446762bcc18 *man/Ants_radians.Rd
-3dae753dc960b92a3d648eee0314909b *man/CircNNTSR-package.Rd
+d6a7ddde48ca99893c6d4ce49a080ff4 *man/CircNNTSR-package.Rd
 2ca73fb4601a12e5aa31ed38ef3c1d48 *man/DataB5FisherSpherical.Rd
 242e6f0ffabfb6108bf3ff7637701309 *man/DataUniformBivariate200obs.rd
 7c3e520522d75b92c2c10db859f7915d *man/Datab3fisher.rd
@@ -81,10 +82,10 @@ bc103eca95639559384ebef0642ad9eb *man/SuicidesMexico2005.rd
 9d4704272af23cecea52962550253113 *man/Turtles.Rd
 f25ab76fb10acfb4e16b46004a62e149 *man/Turtles_radians.Rd
 ce5d87f895b8b0cb9246f8b0fc23b177 *man/WindDirectionsTrivariate.rd
-8a9c143ad535344ce5a62ffd4545d89f *man/mnntsdensity.Rd
+400bb0b5ab4cddf109c1caad90fd7de2 *man/mnntsdensity.Rd
 190dd46150d4ace29667d3c8a051574b *man/mnntsdensity2d.Rd
 b6b7e3a79027ccd7980ee27bf13b8fae *man/mnntsloglik.Rd
-ffc0cc1cc2e56329b68de3fc2f91815c *man/mnntsmanifoldnewtonestimation.Rd
+570a95353c3f2f98e718108c06cb265f *man/mnntsmanifoldnewtonestimation.Rd
 ae2d1396bbc1b46f9d2045869e3e7217 *man/mnntsmarginal.Rd
 fd88965b6f4347dd45c62c975153b2da *man/mnntsplot.Rd
 1b92d346bd9fb335882e9e1d25547c13 *man/mnntsplotmarginal.Rd
@@ -100,7 +101,7 @@ ac207723b1387e19dd7165e0548d45a1 *man/nntsABDensitySymmetric.Rd
 3c16989c0dbfa86e13c7116f4214e9c9 *man/nntsDistributioninterval0to1.Rd
 c2591be917a7b8f421b6278832ccf077 *man/nntsDistributioninterval0to2pi.Rd
 363a4a56345b883b7a2ea04fd92289ec *man/nntsSymmetricDensity.Rd
-44d68826ddcc6822af8267d6c5087c99 *man/nntsdensity.Rd
+cf38e41c019fda586eb073feffc62f3b *man/nntsdensity.Rd
 3b72c9062c4600a5cfb02f63176296c0 *man/nntsestimationSymmetric.Rd
 02dec6ca453ddc70215e0e907e4918d5 *man/nntsloglik.Rd
 97e0f2a20e63eb61c26a26fa6fbafb43 *man/nntsloglikInterval0to1.Rd
@@ -115,7 +116,7 @@ f07289c78e4c75437714bfdab6fcf92a *man/nntsplot.Rd
 551e6a967cc67cfc60845e8f48a199d8 *man/nntsrandominitial.Rd
 838afa630db2958fa53741b9e736833e *man/nntsrandominitialSymmetric.Rd
 8b0d1cde3968b3e548c809f49b978ccc *man/nntssimulation.Rd
-ff74675d60c38b9ace43c4e921dad11d *man/snntsdensity.Rd
+21f7702e3974f8aaed1204090700a3e2 *man/snntsdensity.Rd
 cae9164605a4b6225b1de8d16baa368d *man/snntsdensityplot.Rd
 8a6dc9fd3287a9eae460bbe0fa3ca48b *man/snntsloglik.Rd
 16d6501f127bf2483e58f7c7ecae1a9a *man/snntsmanifoldnewtonestimation.Rd

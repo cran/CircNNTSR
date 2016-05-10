@@ -1,25 +1,24 @@
 \name{CircNNTSR-package}
-\Rdversion{2.1}
+\Rdversion{2.2}
 \alias{CircNNTSR-package}
 \alias{CircNNTSR}
 \docType{package}
-\title{
-CircNNTSR: An R package for the statistical analysis of circular data using nonnegative trigonometric 
+\title{CircNNTSR: An R Package for the statistical analysis of circular data using nonnegative trigonometric 
 sums (NNTS) models
 }
 \description{
 A collection of utilities for the statistical analysis of circular and spherical data using nonnegative 
 trigonometric sum (NNTS) models
 }
-\details{
-\tabular{ll}{
+\details{\tabular{ll}{
 Package: \tab CircNNTSR\cr
 Type: \tab Package\cr
-Version: \tab 2.0\cr
-Date: \tab 2011-12-27\cr
+Version: \tab 2.2\cr
+Date: \tab 2016-05-08\cr
 License: \tab GLP (>=2)\cr
 LazyLoad: \tab yes\cr
 }
+
 Fernandez-Duran, J.J. (2004) proposed a new family of distributions for circular
 random variables based on nonnegative trigonometric sums. This package provides 
 functions for working with circular distributions based on nonnegative trigonometric
@@ -57,14 +56,19 @@ Maintainer: Maria Mercedes Gregorio Dominguez <mercedes@itam.mx>
 
 }
 \references{
-Fernandez-Duran, J.J. (2004). Circular Distributions Based on Nonnegative Trigonometric Sums, Biometrics, 
-60(2), 499-503.
+Fernandez-Duran, J.J. (2004). Circular Distributions Based on Nonnegative Trigonometric Sums, Biometrics, 60(2), 499-503.
 
-Fernandez-Duran J. J. y Gregorio Dominguez, M. M. (2008). Spherical Distributions Based on Nonnegative 
-Trigonometric Sums, Working Paper, Statistics Department, ITAM, DE-C08.6
+Fernandez-Duran, J.J., Gregorio-Dominguez, M.M. (2010). A Likelihood-Ratio Test for Homogeneity in Circular Data. Journal of Biometrics & Biostatistics, 1(3), 107. doi:10.4172/2155-6180.1000107
 
-Fernandez-Duran, J.J., Gregorio-Dominguez, M.M. (2009) Symmetric Circular Distributions Based on 
-Nonnegative Trigonometric Sums. Working Paper, DE-C09.12, Department of Statistics, ITAM, Mexico
+Fernandez-Duran, J.J., Gregorio-Dominguez, M.M. (2010). Maximum Likelihood Estimation of Nonnegative Trigonometric Sums Models Using a Newton-Like Algorithm on Manifolds. Electronic Journal of Statistics, 4, 1402-1410. doi:10.1214/10-ejs587
+
+Fernandez-Duran, J.J., Gregorio-Dominguez, M.M. (2014). Distributions for Spherical Data Based on Nonnegative Trigonometric Sums. Statistical Papers, 55(4), 983-1000. doi:10.1007/s00362-013-0547-5
+
+Fernandez-Duran, J.J., Gregorio-Dominguez, M.M. (2014). Modeling Angles in Proteins and Circular Genomes Using Multivariate Angular Distributions Based on Nonnegative Trigonometric Sums. Statistical Applications in Genetics and Molecular Biology, 13(1), 1-18. doi:10.1515/sagmb-2012-0012
+
+Fernandez-Duran, J.J., Gregorio-Dominguez, M.M. (2014). Testing for Seasonality Using Circular Distributions Based on Nonnegative Trigonometric Sums as Alternative Hypotheses. Statistical Methods in Medical Research, 23(3), 279-292. doi:10.1177/0962280211411531.
+
+Juan Jose Fernandez-Duran, Maria Mercedes Gregorio-Dominguez (2016). CircNNTSR: An R Package for the Statistical Analysis of Circular, Multivariate Circular, and Spherical Data Using Nonnegative Trigonometric Sums. Journal of Statistical Software, 70(6), 1-19. doi:10.18637/jss.v070.i06
 }
 
 \keyword{ package }

@@ -1,4 +1,4 @@
-#Función auxiliar para gráfica bivariada con marginales
+#Funcion auxiliar para grafica bivariada con marginales
 
 trans3d<-function (x, y, z, pmat) 
 {

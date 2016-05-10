@@ -13,7 +13,10 @@ The sum of the squared moduli of the c parameters must be equal to 1/(2*pi). }
 
 \value{The function returns the density function evaluated at each point in data}
 
-\references{Fernandez-Duran, J.J. (2004). Circular Distributions Based on Nonnegative Trigonometric Sums, Biometrics, 60(2), 499-503.}
+\references{Fernandez-Duran, J.J. (2004). Circular Distributions Based on Nonnegative Trigonometric Sums, Biometrics, 60(2), 499-503.
+
+Juan Jose Fernandez-Duran, Maria Mercedes Gregorio-Dominguez (2016). CircNNTSR: An R Package for the Statistical Analysis of Circular, Multivariate Circular, and Spherical Data Using Nonnegative Trigonometric Sums. Journal of Statistical Software, 70(6), 1-19. doi:10.18637/jss.v070.i06
+}
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez}
 
 \examples{

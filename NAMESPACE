@@ -1,1 +1,3 @@
 exportPattern("^[[:alpha:]]+")
+importFrom("graphics","curve","lines","persp","plot")
+importFrom("stats","constrOptim","rnorm","runif")

@@ -1,0 +1,21 @@
+bibentry(bibtype = "Article",
+  title        = "{CircNNTSR}: An {R} Package for the Statistical Analysis of Circular, Multivariate Circular, and Spherical Data Using Nonnegative Trigonometric Sums",
+  author       = c(person(given = c("Juan", "Jos\\'e"),
+                          family = "Fern\\'andez-Dur\\'an"),
+                   person(given = c("Mar\\'ia", "Mercedes"),
+                          family = "Gregorio-Dom\\'\\inguez")),
+  journal      = "Journal of Statistical Software",
+  year         = "2016",
+  volume       = "70",
+  number       = "6",
+  pages        = "1--19",
+  doi          = "10.18637/jss.v070.i06",
+
+  header       = "To cite CircNNTSR in publications use:",
+  textVersion  =
+  paste("Juan Jose Fernandez-Duran, Maria Mercedes Gregorio-Dominguez (2016).",
+        "CircNNTSR: An R Package for the Statistical Analysis of Circular, Multivariate Circular, and Spherical Data Using Nonnegative Trigonometric Sums.",
+        "Journal of Statistical Software, 70(6), 1-19.",
+        "doi:10.18637/jss.v070.i06")
+)
+
