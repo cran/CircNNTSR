@@ -31,7 +31,7 @@ mnntsmanifoldnewtonestimation<-function (data, M = 0, R=1, iter = 1000, initialp
 
     eta <- matrix(0, nrow = prod(M + 1), ncol = 1)
     for (k in 1:n) 
-	eta <- eta + (1/n) * (1/(t(Conj(c0)) %*% statisticsmatrix[, k])) * statisticsmatrix[, k]
+	eta <- eta + as.vector((1/n) * (1/(t(Conj(c0)) %*% statisticsmatrix[, k]))) * statisticsmatrix[, k]
     eta <- eta - c0
     newtonmanifold <- (c0 + eta)
     newtonmanifold <- newtonmanifold/sqrt(sum(Mod(newtonmanifold)^2))
@@ -41,8 +41,8 @@ mnntsmanifoldnewtonestimation<-function (data, M = 0, R=1, iter = 1000, initialp
     for (j in 1:iter) {
         eta <- matrix(0, nrow = prod(M + 1), ncol = 1)
         for (k in 1:n) {
-            eta <- eta + (1/n) * (1/(t(Conj(newtonmanifold)) %*% 
-                statisticsmatrix[, k])) * statisticsmatrix[, 
+            eta <- eta + as.vector((1/n) * (1/(t(Conj(newtonmanifold)) %*% 
+                statisticsmatrix[, k]))) * statisticsmatrix[, 
                 k]
         }
         eta <- eta - newtonmanifold

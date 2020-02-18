@@ -12,11 +12,12 @@ The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). }
 }
 
 \examples{
+	set.seed(200)
 data(Turtles_radians)
 #Empirical analysis of data
 Turtles_hist<-hist(Turtles_radians,breaks=10,freq=FALSE)
 #Estimation of the NNTS density with 3 componentes for data
-est<-nntsmanifoldnewtonestimation(Turtles_radians,3)
+est<-nntsmanifoldnewtonestimation(Turtles_radians,3,iter=200)
 est
 #plot the estimated density
 nntsplot(est$cestimates[,2],3)

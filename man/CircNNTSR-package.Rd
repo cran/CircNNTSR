@@ -1,5 +1,5 @@
 \name{CircNNTSR-package}
-\Rdversion{2.2}
+\Rdversion{2.2-1}
 \alias{CircNNTSR-package}
 \alias{CircNNTSR}
 \docType{package}
@@ -13,8 +13,8 @@ trigonometric sum (NNTS) models
 \details{\tabular{ll}{
 Package: \tab CircNNTSR\cr
 Type: \tab Package\cr
-Version: \tab 2.2\cr
-Date: \tab 2016-05-08\cr
+Version: \tab 2.2-1\cr
+Date: \tab 2020-02-16\cr
 License: \tab GLP (>=2)\cr
 LazyLoad: \tab yes\cr
 }
@@ -77,17 +77,12 @@ Juan Jose Fernandez-Duran, Maria Mercedes Gregorio-Dominguez (2016). CircNNTSR: 
 %~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 %}
 \examples{
-a<-c(runif(10,3*pi/2,2*pi-0.00000001),runif(10,pi/2,pi-0.00000001))
-#Estimation of the NNTSdensity with 2 components for data and 1000 iterations
-est<-nntsmanifoldnewtonestimation(a,2,1000)
-#plot the estimated density
-nntsplot(est$cestimates[,2],2)
-
+set.seed(200)
 data(Turtles_radians)
 #Empirical analysis of data
 Turtles_hist<-hist(Turtles_radians,breaks=10,freq=FALSE)
 #Estimation of the NNTS density with 3 componentes for data
-est<-nntsmanifoldnewtonestimation(Turtles_radians,3)
+est<-nntsmanifoldnewtonestimation(Turtles_radians,3,iter=100)
 est
 #plot the estimated density
 nntsplot(est$cestimates[,2],3)
@@ -102,26 +97,9 @@ M<-c(2,3)
 R<-length(M)
 data(Nest)
 data<-Nest
-est<-mnntsmanifoldnewtonestimation(data,M,R,1000)
+est<-mnntsmanifoldnewtonestimation(data,M,R,100)
 est
 cest<-est$cestimates
 mnntsplot(cest, M)
-
-data(Datab6fisher_ready)
-data<-Datab6fisher_ready
-M<-c(4,4)
-cpars<-rnorm(prod(M+1))+rnorm(prod(M+1))*complex(real=0,imaginary=1)
-cpars[1]<-Re(cpars[1])
-cpars<- cpars/sqrt(sum(Mod(cpars)^2))
-snntsdensity(data, cpars, M)
-snntsloglik(data, cpars, M)
-
-data(Datab6fisher_ready)
-data<-Datab6fisher_ready
-M<-c(1,2)
-cest<-snntsmanifoldnewtonestimation(data, M)
-lat<-snntsmarginallatitude(seq(0,pi,.1),cest$cestimates[,3],M)
-plot(seq(0,pi,.1),lat,type="l")
-
 
 }

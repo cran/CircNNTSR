@@ -29,13 +29,15 @@ Working Paper, Department of Statistics, ITAM, DE-C10.8}
 \author{Juan Jose Fernandez-Duran y Maria Mercedes Gregorio-Dominguez}
 
 \examples{
+set.seed(200)
 a<-c(runif(10,3*pi/2,2*pi-0.00000001),runif(10,pi/2,pi-0.00000001))
-#Estimation of the NNTSdensity with 2 components for data and 1000 iterations
-nntsmanifoldnewtonestimation(a,2,1000)
+#Estimation of the NNTSdensity with 2 components for data and 200 iterations
+nntsmanifoldnewtonestimation(a,2,iter=200)
 
 data(Turtles_radians)
 #Empirical analysis of data
 Turtles_hist<-hist(Turtles_radians,breaks=10,freq=FALSE)
 #Estimation of the NNTS density with 3 componentes for data
-nntsmanifoldnewtonestimation(Turtles_radians,3)
+nntsmanifoldnewtonestimation(Turtles_radians,3,iter=200)
+
 }

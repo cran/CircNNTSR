@@ -23,6 +23,7 @@ Juan Jose Fernandez-Duran, Maria Mercedes Gregorio-Dominguez (2016). CircNNTSR: 
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez}
 
 \examples{
+	set.seed(200)
 M<-c(2,3)
 R<-length(M)
 data<-c(0,pi,pi/2,pi,pi,3*pi/2,pi,2*pi,2*pi,pi)
@@ -35,7 +36,7 @@ M<-c(2,3)
 R<-length(M)
 data(Nest)
 data<-Nest
-est<-mnntsmanifoldnewtonestimation(data,M,R,1000)
+est<-mnntsmanifoldnewtonestimation(data,M,R,100)
 est
 ccoef<-est$cestimates[,3]
 mnntsdensity(data,ccoef,M,R)

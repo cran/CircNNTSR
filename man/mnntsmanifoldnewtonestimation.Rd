@@ -31,11 +31,12 @@ the last column is the c parameter's estimators}
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez}
 
 \examples{
+	set.seed(200)
 M<-c(2,3)
 R<-length(M)
 data(Nest)
 data<-Nest
-est<-mnntsmanifoldnewtonestimation(data,M,R,1000)
+est<-mnntsmanifoldnewtonestimation(data,M,R,100)
 est
 }
 

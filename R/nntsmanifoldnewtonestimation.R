@@ -26,7 +26,7 @@ function(data,M=0,iter=1000,initialpoint=FALSE,cinitial)
 	eta<-matrix(0,nrow=M+1,ncol=1)
 
 	for (k in 1:n)
-		eta <- eta + (1/n)*(1/(t(Conj(c0))%*%statisticsmatrix[ ,k]))*statisticsmatrix[ ,k]
+		eta <- eta + as.vector((1/n)*(1/(t(Conj(c0))%*%statisticsmatrix[ ,k])))*statisticsmatrix[ ,k]
 
 	eta<-eta-c0
 	
@@ -38,7 +38,7 @@ function(data,M=0,iter=1000,initialpoint=FALSE,cinitial)
 	for (j in 1:iter){
 		eta<-matrix(0,nrow=M+1,ncol=1)
 		for (k in 1:n){
-			eta<-eta+(1/n)*(1/(t(Conj(newtonmanifold))%*%statisticsmatrix[ ,k]))*statisticsmatrix[ ,k]
+			eta<-eta+as.vector((1/n)*(1/(t(Conj(newtonmanifold))%*%statisticsmatrix[ ,k])))*statisticsmatrix[ ,k]
 			}
 		eta<-eta-newtonmanifold
 		newtonmanifold<-newtonmanifold+eta

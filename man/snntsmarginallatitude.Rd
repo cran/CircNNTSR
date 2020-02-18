@@ -21,10 +21,11 @@ number. The sum of the squared moduli of the c parameters must be equal to one }
 function, which lie on the surface of the unit hypersphere}
 
 \examples{
+	set.seed(200)
 data(Datab6fisher_ready)
 data<-Datab6fisher_ready
 M<-c(1,2)
-cest<-snntsmanifoldnewtonestimation(data, M)
+cest<-snntsmanifoldnewtonestimation(data, M,iter=150)
 lat<-snntsmarginallatitude(seq(0,pi,.1),cest$cestimates[,3],M)
 plot(seq(0,pi,.1),lat,type="l")
 }

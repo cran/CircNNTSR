@@ -10,7 +10,6 @@
   \item{cpars}{Vector of complex numbers of dimension prod(M+1). The sum of the squared moduli of 
 the c parameters must be equal to one}  
   \item{M}{Vector with the number of components in the SNNTS for each dimension}
-  \item{...}{Arguments passed to the function plot}
 }
 
 \value{The points needed to plot the SNNTS density function}
@@ -23,10 +22,11 @@ the c parameters must be equal to one}
 function, which lie on the surface of the unit hypersphere}
 
 \examples{
+	set.seed(200)
 data(Datab6fisher_ready)
 data<-Datab6fisher_ready
 M<-c(4,4)
-cest<-snntsmanifoldnewtonestimation(data, M)
+cest<-snntsmanifoldnewtonestimation(data, M, iter=150)
 cpars<-cest$cestimates[,3]
 longitud<-seq(0,360,10)*(pi/180)
 latitud<-seq(0,180,5)*(pi/180)

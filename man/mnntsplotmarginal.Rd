@@ -25,11 +25,12 @@ $cestimates}
 
 
 \examples{
+	set.seed(200)
 M<-c(2,3)
 R<-length(M)
 data(Nest)
 data<-Nest
-est<-mnntsmanifoldnewtonestimation(data,M,R,1000)
+est<-mnntsmanifoldnewtonestimation(data,M,R,100)
 est
 cest<-est$cestimates
 mnntsplotmarginal(cest, M, 1)

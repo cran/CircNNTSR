@@ -7,9 +7,9 @@
 \usage{data(Datab6fisher_ready)}
 \format{Datab6fisher_ready}
 \details{
-dataaux <- datab6fisher
-datab6fisher[,1] <- dataaux[,2]
-datab6fisher[,2] <- dataaux[,1]
+dataaux <- datab6fisher;
+datab6fisher[,1] <- dataaux[,2];
+datab6fisher[,2] <- dataaux[,1];
 datab6fisher[,1] <- 360 - datab6fisher[,1];
 datab6fisher[,2] <- 90 + datab6fisher[,2];
 datab6fisher_ready <- datab6fisher*(pi/180)}
