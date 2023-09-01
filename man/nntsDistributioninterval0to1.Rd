@@ -14,7 +14,7 @@ The sum of the squared moduli of the c parameters must be equal to 1/(2*pi). }
 \item{M}{Number of components in the NNTS}
 }
 
-\value{The function returns the Value of the distribution function at theta}
+\value{The function returns the value of the distribution function at theta}
 
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez}
 

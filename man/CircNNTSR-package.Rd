@@ -1,5 +1,5 @@
 \name{CircNNTSR-package}
-\Rdversion{2.2-1}
+\Rdversion{2.3}
 \alias{CircNNTSR-package}
 \alias{CircNNTSR}
 \docType{package}
@@ -43,7 +43,7 @@ as (Fernandez-Duran, 2004)
 \sum_{k=1}^M(a_kcos(k\theta) + b_ksin(k\theta)).}{f(theta; \underline{a},\underline{b},M)=1/(2*pi) + 1/pi*sum_{k=1}^M(a_k*cos(k*theta) + b_k*sin(k*theta)).}
 Note that Equation 1 
 can also be expressed as a double sum as
-\deqn{\sum_{k=0}^{M}\sum_{m=0}^{M}c_k\bar{c}_me^{i(k-m)\theta}}{sum_{k=0}^{M}sum_{m=0}^{M}c_k*underline{c}_m*exp(i*(k-m)*theta).}
+\deqn{\sum_{k=0}^{M}\sum_{m=0}^{M}c_k\bar{c}_me^{i(k-m)\theta}}{sum_{k=0}^{M}sum_{m=0}^{M}c_k*underline{c}_m*exp(i*(k-m)*theta)}.
 
 The \eqn{\underline{c}}{underline{c}} parameters can also be expressed in polar coordinates as \eqn{c_k=\rho_k e^{i\phi_k}}{c_k=rho_k*exp(i*phi_k)} for \eqn{\rho_k \geq 0}{rho_k >= 0} and \eqn{\phi_k \in [0,2\pi)}{phi_k en [0,2*pi)}; where \eqn{\rho_k}{rho_k} is the modulus of \eqn{c_k} and \eqn{\phi_k}{phi_k} is the argument of \eqn{c_k} for \eqn{k=1,\ldots,M}.
 Many functions of the packages use as parameters the squared moduli and the arguments of \eqn{c_k}, \eqn{\rho_k^2}{rho_k^2} and \eqn{\phi_k}{phi_k}, for \eqn{k=1,\ldots,M}. We refer to the parameter \eqn{M} as the number of components in the NNTS.

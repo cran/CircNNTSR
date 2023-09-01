@@ -16,4 +16,5 @@ hypersphere}
 
 \examples{
 nntsrandominitial(3)
+nntsrandominitial(7)
 }

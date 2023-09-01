@@ -19,7 +19,7 @@ Fisher, et al. (1987)
 \references{Toyoda, Y., Suga, K., Murakami, K., Hasegawa, H.,
 Shibata, S., Domingo, V., Escobar, I., Kamata, K., Bradt, H.,
 Clark, G. and La Pointe, M. (1965). Studies of Primary Cosmic Rays
-in the Energy Region $10^{14}$ eV to $10^{17}$ eV (Bolivian Air
+in the Energy Region \eqn{10^{14}} eV to \eqn{10^{17}} eV (Bolivian Air
 Shower Joint Experiment), Proceedings of the International
 Conference on Cosmic Rays, vol. 2,
 London, September, 1965, 708--711. London: The Institute of

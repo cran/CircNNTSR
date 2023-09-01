@@ -1,5 +1,5 @@
 \name{snntsmanifoldnewtonestimation}
-\Rdversion{2.1}
+\Rdversion{2.3}
 \alias{snntsmanifoldnewtonestimation}
 \title{Parameter estimation for SNNTS distributions for spherical data}
 \description{Computes the maximum likelihood estimates of the SNNTS model parameters using a 

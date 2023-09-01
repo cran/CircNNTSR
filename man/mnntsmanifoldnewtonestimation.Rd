@@ -14,7 +14,7 @@ algorithm on the hypersphere}
 \item{cinitial}{Initial value for cpars (parameters of the model) for the optimization algorithm.
 Vector of complex numbers of dimension prod(M+1). The first element is a real and positive number. 
 The first M[1]+1 elements correspond to dimension one, the next M[2]+1 elements correspond to dimension two, and so on. 
-The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). }
+The sum of the SQUARED moduli of the c parameters must be equal to \eqn{\left(\frac{1}{2*pi}\right)^R}. }
 }
 
 \value{\item{cestimates }{Matrix of prod(M+1)*(R+1). The first R columns are the parameter number, and 
@@ -27,7 +27,11 @@ the last column is the c parameter's estimators}
 
 \references{Fernandez-Duran, J.J. and Gregorio-Dominguez, M.M. (2009) 
     Multivariate Angular Distributions Based on Multiple Nonnegative Trigonometric Sums, 
-    Working Paper, Statistics Department, ITAM, DE-C09.1}
+    Working Paper, Statistics Department, ITAM, DE-C09.1
+    
+    Fernandez-Duran, J.J., Gregorio-Dominguez, M.M. (2014). Modeling Angles in Proteins and Circular Genomes Using Multivariate Angular Distributions Based on Nonnegative Trigonometric Sums. Statistical Applications in Genetics and Molecular Biology, 13(1), 1-18. doi:10.1515/sagmb-2012-0012
+}
+
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez}
 
 \examples{
@@ -35,7 +39,7 @@ the last column is the c parameter's estimators}
 M<-c(2,3)
 R<-length(M)
 data(Nest)
-data<-Nest
+data<-Nest*(pi/180)
 est<-mnntsmanifoldnewtonestimation(data,M,R,100)
 est
 }

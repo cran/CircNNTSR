@@ -16,7 +16,7 @@ the squared moduli of the c parameters must be equal to 1/(2*pi) }
 \details{This function computes the density function of a variable S (S in the interval [0,1)). If theta 
 is defined in radians (theta in the interval [0,2*pi)), the relation between S and theta is theta=2*pi*S. 
 }
-\value{Value of density function at each component of S}
+\value{Value of the density function at each component of S}
 
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez}
 

@@ -1,4 +1,4 @@
-  \name{nntsplot}
+\name{nntsplot}
 \Rdversion{2.1}
 \alias{nntsplot}
 \title{Plots the NNTS density}
@@ -12,17 +12,16 @@ The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). }
 }
 
 \examples{
-	set.seed(200)
 data(Turtles_radians)
 #Empirical analysis of data
 Turtles_hist<-hist(Turtles_radians,breaks=10,freq=FALSE)
 #Estimation of the NNTS density with 3 componentes for data
 est<-nntsmanifoldnewtonestimation(Turtles_radians,3,iter=200)
 est
-#plot the estimated density
-nntsplot(est$cestimates[,2],3)
-#add the histogram to the estimated density plot
-plot(Turtles_hist, freq=FALSE, add=TRUE)
+#plot the histogram
+plot(Turtles_hist, freq=FALSE)
+#add the estimated density to the histogram
+nntsplot(est$cestimates[,2],3,add= TRUE)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

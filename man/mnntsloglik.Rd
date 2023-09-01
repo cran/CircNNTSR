@@ -7,7 +7,7 @@
 \arguments{\item{data}{Matrix of angles in radians, a column for each dimension, a row for each data point.}
 \item{cpars}{Parameters of the model. A vector of complex numbers of dimension prod(M+1). The first element is a real and positive number. 
 The first M[1]+1 elements correspond to dimension one, next M[2]+1 elements correspond to dimension two, and so on.
-The sum of the SQUARED moduli of the c parameters must be equal to 1/(2*pi). }
+The sum of the SQUARED moduli of the c parameters must be equal to \eqn{\left(\frac{1}{2*pi}\right)^R}. }
 \item{M}{Vector of length R with number of components in the MNNTS for each dimension.}
 \item{R}{Number of dimensions.}
 }

@@ -6,7 +6,7 @@
 \description{Plots the Symmetric NNTS density function}
 \usage{nntsplotSymmetric(cpars = c(0, 0), M = 0, ...)}
 \arguments{
-\item{cpars}{Vector of real numbers of dimension 2*M. The first M numbers are the squared moduli of the c parameters.
+\item{cpars}{Vector of real numbers of dimension 2M. The first 2M-1 numbers are the squared moduli of the c parameters.
 The sum must be less than 1/(2*pi). The last number is the mean of symmetry}
 \item{M}{Number of components in the NNTS}
 \item{\dots}{Arguments passed to the function curve}

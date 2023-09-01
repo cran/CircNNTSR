@@ -3,7 +3,7 @@
 \alias{EarthquakesPacificMexicogt7}
 \docType{data}
 \title{Date of Occurrence of Earthquakes 2}
-\description{The time of occurrence of earthquakes of intensity greater than 7.0$^o$ Richter with an epicenter occurring in the coast
+\description{The time of occurrence of earthquakes of intensity greater than \eqn{7.0^o} Richter with an epicenter occurring in the coast
 of the Pacific Ocean in Mexico from 1920 to 2002.
 There are a total of 76 observations. }
 \usage{data(EarthquakesPacificMexicogt7)}

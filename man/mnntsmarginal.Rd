@@ -16,7 +16,10 @@ last column is the c parameter's estimators}
 \value{The function returns the density function evaluated at theta}
 \references{Fernandez-Duran, J.J. and Gregorio-Dominguez, M.M. (2009) 
     Multivariate Angular Distributions Based on Multiple Nonnegative Trigonometric Sums, 
-    Working Paper, Statistics Department, ITAM, DE-C09.1}
+    Working Paper, Statistics Department, ITAM, DE-C09.1
+    
+    Fernandez-Duran, J.J., Gregorio-Dominguez, M.M. (2014). Modeling Angles in Proteins and Circular Genomes Using Multivariate Angular Distributions Based on Nonnegative Trigonometric Sums. Statistical Applications in Genetics and Molecular Biology, 13(1), 1-18. doi:10.1515/sagmb-2012-0012
+}
 \author{Juan Jose Fernandez-Duran and Maria Mercedes Gregorio-Dominguez}
 
 \examples{
